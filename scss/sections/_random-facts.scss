@@ -1,0 +1,10 @@
+@use '../custom' as *;
+
+.randomFacts-section {
+    background: $dark;
+    color: $white;
+
+    h2 {
+        color: $primary;
+    }
+}

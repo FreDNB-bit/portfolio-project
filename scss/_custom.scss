@@ -1,0 +1,28 @@
+//MY THEME COLORS
+$smoky-black: #0f0f0f; //background
+$floral-white: #fff8f0; //text
+$dark-cyan: #0f8b8d; //titles and highlights
+$acid-green: #a5be00; //details
+$violet: #62466b; //pie chart
+
+//WHITE AND GREY COLORS
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+
+$primary: $dark-cyan;
+$secondary: $acid-green;
+$dark: $smoky-black;
+$white: $floral-white;
+
+//IMPORT BOOTSTRAP 5
+@import"../node_modules/bootstrap/scss/bootstrap.scss";

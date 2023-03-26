@@ -1,0 +1,38 @@
+@use '../custom' as *;
+
+.skills-section {
+    background: $dark;
+    color: $white;
+
+    h2 {
+        color: $primary;
+    }
+
+    h3 {
+        color: $secondary;
+        margin-bottom: 1.3rem;
+    }
+
+    i {
+        margin: 1.2rem 0;
+        color: $primary;
+    }
+
+    p {
+        font-size: larger;
+    }
+}
+
+.skills-intro {
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.skills-info {
+    width: 25%;
+
+    .adobe-i {
+        width: 1.9rem;
+        margin: 0.3rem 0;
+    }
+}

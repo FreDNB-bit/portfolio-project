@@ -1,0 +1,29 @@
+@use '../custom' as *;
+
+.intro-section {
+    background-color: $dark;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+// TEXT ANIMATION ON CODING COLUMN
+.line {
+    position: relative;
+    border-right: 5px solid $secondary;
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing {
+    animation: typewriter 1.5s steps(12) 1s 1 normal both,
+        blinkCursor 1s steps(13) infinite normal;
+}
+
+// IMAGE COLUMN
+.my-potrait {
+    width: 300px;
+    border-radius: 35%;
+}
+

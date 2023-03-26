@@ -1,0 +1,23 @@
+@use '../custom' as *;
+
+//CODING COLUMN TEXT ANIMATION
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11ch;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba($color: $secondary, $alpha: 1.0);
+    }
+
+    to {
+        border-right-color: rgba($color: $secondary, $alpha: 0.5);
+    }
+}
+

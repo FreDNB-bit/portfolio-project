@@ -1,0 +1,33 @@
+
+@use 'custom';
+
+//IMPORT THE COMPONENTS
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/mixins';
+@use 'components/typography';
+@use 'components/animations';
+
+
+//IMPORT THE SECTIONS
+@use 'sections/navbar';
+@use 'sections/intro-section';
+@use 'sections/call-to-action';
+@use 'sections/about-intro';
+@use 'sections/skills';
+@use 'sections/my-story';
+@use 'sections/random-facts';
+@use 'sections/portfolio-intro';
+@use 'sections/web-dev';
+@use 'sections/graphic-illustration';
+@use 'sections/contacts';
+@use 'sections/footer';
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

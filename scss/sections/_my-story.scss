@@ -1,0 +1,92 @@
+@use '../custom' as *;
+
+.myStory-section {
+  background: $dark;
+  color: $white;
+
+  h2 {
+    color: $primary;
+  }
+}
+
+ul {
+  padding: 50px 0;
+}
+
+.year {
+  position: relative;
+  list-style-type: none;
+  width: 6px;
+  background-color: $primary;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.year::after {
+  background: $primary;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+
+.year div {
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 0;
+  background: $white;
+}
+
+.year:nth-child(odd) div {
+  left: 45px;
+}
+
+.year:nth-child(even) div {
+  left: -445px;
+}
+
+time {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.year div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.year:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.year:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.year.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .year div {
+    width: 250px;
+  }
+
+  .year:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+
+}

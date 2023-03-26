@@ -1,0 +1,19 @@
+@use '../custom' as *;
+
+.menu {
+    li {
+        padding: 0 1rem;
+
+        a {
+           color: $primary !important;
+           font-size: 1.4rem;
+           font-weight: 600;
+
+            &:hover,
+            &:active {
+                color: $secondary !important;
+            }
+        }
+
+    }
+}
