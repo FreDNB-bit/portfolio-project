@@ -1,0 +1,20 @@
+@use '../custom' as *;
+
+.portfolio-section {
+    background-color: $dark;
+    padding: 5rem 0 0 0;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+        color: $primary;
+        font-weight: 600;
+        text-transform: none;
+        padding-bottom: 2.5rem;
+    }
+
+    p {
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+    }
+}

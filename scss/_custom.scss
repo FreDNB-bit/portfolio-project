@@ -24,5 +24,16 @@ $secondary: $acid-green;
 $dark: $smoky-black;
 $white: $floral-white;
 
+//NAVBAR DROPDOWN
+.dropdown-menu.show {
+    background-color: $dark !important;
+    padding: 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: $dark !important;
+}
+
 //IMPORT BOOTSTRAP 5
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
