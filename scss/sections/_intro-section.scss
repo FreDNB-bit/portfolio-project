@@ -10,25 +10,24 @@
     .intros {
         width: 30%;
     }
-}
 
-// TEXT ANIMATION ON CODING COLUMN
-.line {
-    position: relative;
-    border-right: 5px solid $secondary;
-    width: 10ch;
-    white-space: nowrap;
-    overflow: hidden;
-}
+    // TEXT ANIMATION ON CODING COLUMN
+    .line {
+        position: relative;
+        border-right: 5px solid $secondary;
+        width: 10ch;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 
-.typing {
-    animation: typewriter 1.5s steps(12) 1s 1 normal both,
-        blinkCursor 1s steps(13) infinite normal;
-}
+    .typing {
+        animation: typewriter 1.5s steps(12) 1s 1 normal both,
+            blinkCursor 1s steps(13) infinite normal;
+    }
 
-// IMAGE COLUMN
-.my-potrait {
-    width: 300px;
-    border-radius: 30%;
+    // IMAGE COLUMN
+    .my-potrait {
+        width: 300px;
+        border-radius: 30%;
+    }
 }
-

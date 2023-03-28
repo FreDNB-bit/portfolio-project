@@ -24,15 +24,21 @@ $secondary: $acid-green;
 $dark: $smoky-black;
 $white: $floral-white;
 
+//TIMELINE
+$gutter: 50px;
+$border-width: 4px;
+$dot-diameter: 22px;
+
 //NAVBAR DROPDOWN
 .dropdown-menu.show {
     background-color: $dark !important;
     padding: 0;
+    border: none;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: $dark !important;
+    background-color: transparent !important;
 }
 
 //IMPORT BOOTSTRAP 5
