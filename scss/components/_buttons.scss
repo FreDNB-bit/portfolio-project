@@ -1,12 +1,15 @@
 @use '../custom' as *;
 
+button {
+    cursor: pointer;
+}
+
 //BUTTON FOR CARDS LINK
 .card-button {
     background-color: $primary;
     border-radius: 28px;
     border: 1px solid $primary;
     display: inline-block;
-    cursor: pointer;
     color: $white;
     font-family: 'Nunito', sans-serif;
     font-size: 17px;
@@ -16,5 +19,24 @@
 
     &:hover {
         background-color: $secondary;
+    }
+}
+
+//GALLERY VIEW BUTTON
+.view-button {
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid $white;
+    color: $white;
+    text-transform: uppercase;
+    padding: 10px;
+
+    &:hover {
+        transition: $ease;
+        background: $white;
+        color: $secondary;
+        transform: scale(1.05);
     }
 }

@@ -1,20 +1,25 @@
 @use '../custom' as *;
 
-// CARDS INTRO-SECTION
-.cards-intro-section {
-    background-color: $dark;
-    padding: 5rem 0 0 0;
-    width: 100%;
-    height: 100%;
+.card {
+    border: none;
 }
 
-.intro-cards {
-    background-color: $white;
-    width: 18rem;
+// CARDS INTRO-SECTION
+.intro-section-cards {
+    background-color: $dark;
+    padding: 5rem 0;
+    width: 100%;
+    height: 100%;
 
-    .icon {
-        color: $primary;
-        font-size: 3.2rem;
+    .intro-cards {
+        background-color: $white;
 
+        width: 18rem;
+
+        .icon {
+            color: $primary;
+            font-size: 3.2rem;
+
+        }
     }
 }

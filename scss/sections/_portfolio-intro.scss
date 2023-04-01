@@ -2,19 +2,122 @@
 
 .portfolio-section {
     background-color: $dark;
-    padding: 5rem 0 0 0;
+    padding: 5rem 0;
     width: 100%;
-    height: 100%;
 
-    h1 {
-        color: $primary;
-        font-weight: 600;
-        text-transform: none;
-        padding-bottom: 2.5rem;
+    .gallery-section {
+        width: 100%;
+
+        .galley-grid-wrapper {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(200px, 1fr));
+            grid-template-rows: 2fr 2fr;
+            grid-gap: 30px;
+
+            .project {
+                position: relative;
+                background: $primary;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    opacity: 0.9;
+
+                }
+
+                p {
+                    position: absolute;
+                    text-align: center;
+                    width: 100%;
+                    padding: 1em 0;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    z-index: 3;
+                }
+
+                .project-title {
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                    white-space: nowrap;
+                    bottom: 0;
+                    font-weight: 100;
+                    font-size: 0.8em;
+                    z-index: 3;
+                    text-transform: uppercase;
+                    color: $dark;
+                    letter-spacing: 2px;
+                }
+            }
+
+            // project hover overlay
+            .project:hover .project-overlay {
+                transform: translateY(0%);
+            }
+
+            .project-overlay {
+                background: rgba(darken($primary, 10%), .9);
+                height: 100%;
+                grid-column: 1 / -1;
+                grid-row: 1 / -1;
+                position: relative;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                transform: translateY(101%);
+                transition: $ease;
+            }
+
+            //project popup overlay
+
+            .overlay {
+                position: fixed;
+                overflow-y: scroll;
+                background: rgba($dark, 0.7);
+                top: 8rem;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: none;
+                z-index: 99;
+            }
+
+            .overlay.open {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .overlay-inner {
+                background: $white;
+                width: auto;
+                padding: 30px;
+                position: relative;
+                opacity: 1;
+            }
+
+            .close {
+                position: absolute;
+                top: 6px;
+                right: 10px;
+                background: none;
+                outline: 0;
+                color: $dark;
+                border: 0;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
+
+            .project-image {
+                margin-left: -50%;
+            }
+        }
     }
 
-    p {
-        line-height: 1.6rem;
-        font-size: 1.2rem;
-    }
 }

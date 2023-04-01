@@ -14,25 +14,27 @@
     }
 
     i {
-        margin: 1.2rem 0;
+        margin: 1.5rem 0;
+        padding-bottom: 0.5rem;
         color: $primary;
+        font-size: 3rem;
     }
 
-    p {
-        font-size: larger;
+    .first-s-skill {
+        margin-bottom: 5rem;
     }
-}
 
-.skills-intro {
-    width: 50%;
-    padding-right: 2rem;
-}
+    .skills-intro {
+        width: 50%;
+        padding-right: 2rem;
+    }
 
-.skills-info {
-    width: 25%;
+    .skills-info {
+        width: 25%;
 
-    .adobe-i {
-        width: 1.9rem;
-        margin: 0.3rem 0;
+        .adobe-i {
+            width: 3rem;
+            padding-bottom: 0.5rem;
+        }
     }
 }

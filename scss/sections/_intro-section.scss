@@ -1,8 +1,11 @@
 @use '../custom' as *;
 
+//see also the 'intro-section' in typography
+
 .intro-section {
     background-color: $dark;
-    padding: 10rem 0 0 0;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
 
     width: 100%;
     height: 100%;
@@ -27,7 +30,6 @@
 
     // IMAGE COLUMN
     .my-potrait {
-        width: 300px;
-        border-radius: 30%;
+        width: 350px;
     }
 }

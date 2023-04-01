@@ -3,7 +3,14 @@ $smoky-black: #0f0f0f; //background
 $floral-white: #fff8f0; //text
 $dark-cyan: #0f8b8d; //titles and highlights
 $acid-green: #a5be00; //details
-$violet: #62466b; //pie chart
+
+$primary: $dark-cyan;
+$secondary: $acid-green;
+$dark: $smoky-black;
+$white: $floral-white;
+$bg-test:$acid-green;
+
+$ease: all 0.3s ease-in-out;
 
 //WHITE AND GREY COLORS
 $white: #fff;
@@ -18,28 +25,11 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 
-
-$primary: $dark-cyan;
-$secondary: $acid-green;
-$dark: $smoky-black;
-$white: $floral-white;
-
 //TIMELINE
 $gutter: 50px;
 $border-width: 4px;
 $dot-diameter: 22px;
 
-//NAVBAR DROPDOWN
-.dropdown-menu.show {
-    background-color: $dark !important;
-    padding: 0;
-    border: none;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-    background-color: transparent !important;
-}
 
 //IMPORT BOOTSTRAP 5
 @import"../node_modules/bootstrap/scss/bootstrap.scss";

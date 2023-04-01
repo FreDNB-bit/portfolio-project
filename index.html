@@ -20,7 +20,7 @@
 <body>
 
     <!--START THE NAVBAR SECTION-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark menu fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">
                 <img src="images/logo.png" alt="logo image">
@@ -63,16 +63,16 @@
 
     <!--START THE INTRO SECTION-->
     <header id="home" class="intro-section">
-        <div class="container">
-            <div class="d-flex flex-row justify-content-between align-items-center text-white">
+        <div class="container-fluid">
+            <div class="d-flex flex-row justify-content-evenly align-items-center text-white">
 
                 <!--start creativity column-->
                 <section class="flex-column intros text-start">
-                    <h1 class="display-4">
-                        <span class="display-4--intro text-primary">
+                    <h1 class="intro-title display-2">
+                        <span class="intro-title--intro">
                             creativity
                         </span>
-                        <span class="display-4--description lh-base">Left side of the brain its always about <span
+                        <span class="intro-title--description lh-base">Left side of the brain its always about <span
                                 class="text-primary">creativity</span>, so here is mine! If u look for some inspiration
                             or someone who can do a potrait of your dog, you in the right place!
                         </span>
@@ -81,14 +81,14 @@
 
                 <!--start potrait image column-->
                 <section class="flex-column intros text-center">
-                    <img src="images/intro-section-potrait-min.png" alt="my-potrait" class="img-fluid my-potrait">
+                    <img src="images/intro-section-potrait-min.png" class="img-fluid my-potrait" alt="my-potrait">
                 </section>
 
                 <!--start coding column-->
                 <section class="flex-column intros text-end">
-                    <h1 class="display-4">
-                        <span class="display-4--intro text-primary line typing">&lt; coding &gt; </span>
-                        <span class="display-4--description lh-base">Right side of the brain its mathematical and
+                    <h1 class="intro-title display-2">
+                        <span class="intro-title--intro line typing">&lt; coding &gt; </span>
+                        <span class="intro-title--description lh-base">Right side of the brain its mathematical and
                             practical, just for dimostrating u'll see that i really love to coding and i say it, i want
                             to be a famous front end developer when i grow up! </span>
                     </h1>
@@ -98,67 +98,65 @@
     </header>
 
     <!--START THE INTRO-CARDS SECTION (settings in 'components/_cards.scss')-->
-    <main class="cards-intro-section">
-        <div class="container">
-            <div class="d-flex justify-content-around align-items-stretch text-center">
+    <main class="intro-section-cards container-fluid">
+        <section class="d-flex justify-content-evenly align-items-stretch text-center">
 
-                <!--start card 1-->
-                <div class="card intro-cards">
-                    <div class="card-body">
-                        <div class="icon">
-                            <i class="fa-solid fa-file-code"></i>
-                        </div>
-
-                        <h3 class="card-title">Web Developing</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-
-                        <a href="#" class="card-button">Card link</a>
+            <!--CARD 1-->
+            <div class="card intro-cards">
+                <div class="card-body">
+                    <div class="icon">
+                        <i class="fa-solid fa-file-code"></i>
                     </div>
+
+                    <h3 class="card-title">Web Developing</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+
+                    <a href="#" class="card-button">Card link</a>
                 </div>
-
-                <!--start card 2-->
-                <div class="card intro-cards">
-                    <div class="card-body">
-                        <div class="icon">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        </div>
-
-                        <h3 class="card-title">Graphic and Illustration</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-
-                        <a href="#" class="card-button">Card link</a>
-                    </div>
-                </div>
-
-                <!--start card 3-->
-                <div class="card intro-cards">
-                    <div class="card-body">
-                        <div class="icon">
-                            <i class="fa-solid fa-palette"></i>
-                        </div>
-
-                        <h3 class="card-title">Traditional Arts</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-
-                        <a href="#" class="card-button">Card link</a>
-                    </div>
-                </div>
-
             </div>
-        </div>
+
+            <!--CARD 2-->
+            <div class="card intro-cards">
+                <div class="card-body">
+                    <div class="icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <h3 class="card-title">Graphic and Illustration</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+
+                    <a href="#" class="card-button">Card link</a>
+                </div>
+            </div>
+
+            <!--CARD 3-->
+            <div class="card intro-cards">
+                <div class="card-body">
+                    <div class="icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+
+                    <h3 class="card-title">Traditional Arts</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+
+                    <a href="#" class="card-button">Card link</a>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <!--START THE ABOUT-INTRO SECTION-->
     <main id="about" class="about-section">
-        <div class="container pb-5">
-            <h1 class="display-2">// about.</h1>
+        <div class="container">
+            <h1 class="sections-titles display-2">// about.</h1>
 
             <div class="d-flex justify-content-between align-items-center">
 
-                <div class="description text-left text-white"> <!--about description-->
+                <section class="description text-left text-white"> <!--about description-->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo eaque beatae, alias
                         dolorum magnam error velit consequatur possimus ipsam quas perferendis facere nesciunt veritatis
                         corporis officiis obcaecati eum! Rerum!
@@ -167,41 +165,43 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut minus distinctio pariatur
                         perspiciatis, magni aperiam quam architecto exercitationem consequuntur enim, sed tempora
                         praesentium ad officiis provident libero. Necessitatibus, rerum!</p>
-                </div>
+                </section>
 
-                <div class=""> <!--right image-->
-
-                </div>
+                <section class="about-right-image text-center">
+                    <img src="images/intro-section-potrait-min.png" class="img-fluid my-potrait" alt="my-potrait">
+                </section>
             </div>
         </div>
     </main>
 
     <!--START MY STORY SECTION-->
-    <section id="my-story" class="myStory-section p-3">
+    <section id="my-story" class="my-story-section">
         <div class="container">
-            <h2 class="display-5">my story.</h2>
+            <h2 class="sub-title display-4">my story.</h2>
 
             <div class="timeline-wrapper">
                 <div class="timeline">
                     <div class="entry">
                         <div class="title">
                             <h3 class="display-4">1990</h3>
-                            
+
                         </div>
                         <div class="body">
                             <h3 class="display-6">Birth - day</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
+                                omnis.</p>
                             <img src="images/carousel-random-facts/badroom.jpg" alt="">
                         </div>
                     </div>
                     <div class="entry">
                         <div class="title">
                             <h3>2004</h3>
-                            
+
                         </div>
                         <div class="body">
                             <h3 class="display-6">First great change</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
+                                omnis.</p>
                             <img src="images/carousel-random-facts/badroom.jpg" alt="">
 
                         </div>
@@ -209,59 +209,64 @@
                     <div class="entry">
                         <div class="title">
                             <h3>2009</h3>
-                            
+
                         </div>
                         <div class="body">
                             <h3 class="display-6">High school degree</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
+                                omnis.</p>
                             <img src="images/carousel-random-facts/badroom.jpg" alt="">
                         </div>
                     </div>
                     <div class="entry">
                         <div class="title">
                             <h3>2013</h3>
-                            
+
                         </div>
                         <div class="body">
                             <h3 class="display-6">Second great change</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
+                                omnis.</p>
 
                         </div>
                     </div>
                     <div class="entry">
                         <div class="title">
                             <h3>2016</h3>
-                    
+
                         </div>
                         <div class="body">
                             <h3 class="display-6">Move to Turin... again!</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
+                                omnis.</p>
 
                         </div>
                     </div>
                     <div class="entry">
                         <div class="title">
                             <h3>2019</h3>
-                    
+
                         </div>
                         <div class="body">
                             <h3 class="display-6">Start coding</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
+                                omnis.</p>
 
                         </div>
                     </div>
                     <div class="entry">
                         <div class="title">
                             <h3>2023</h3>
-                    
+
                         </div>
                         <div class="body">
                             <h3 class="display-6">Here I am</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
+                                omnis.</p>
 
                         </div>
                     </div>
-                
+
                 </div>
             </div>
 
@@ -270,11 +275,11 @@
     </section>
 
     <!--START THE SKILL SECTION-->
-    <section id="skills" class="skills-section p-3">
+    <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="display-5">skills.</h2>
+            <h2 class="sub-title display-4">skills.</h2>
 
-            <div class="d-flex flex-row justify-content-between align-items-center my-5"> <!--dev row-->
+            <section class="d-flex flex-row justify-content-between align-items-center first-s-skill"> <!--dev row-->
 
                 <div class="skills-intro"> <!--web dev col-->
                     <h3>web developing.</h3>
@@ -339,10 +344,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="d-flex flex-row justify-content-start align-items-center mb-5"> <!--graphic row-->
+            <section class="d-flex flex-row justify-content-start align-items-center"> <!--graphic row-->
 
                 <div class="skills-intro"> <!--graphic col-->
                     <h3>graphic.</h3>
@@ -389,14 +394,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 
     <!--START THE RANDOM_FACTS SECTION-->
-    <section id="random-facts" class="randomFacts-section p-3">
+    <section id="random-facts" class="randomFacts-section">
         <div class="container">
-            <h2 class="display-5">random facts.</h2>
+            <h2 class="sub-title display-4">random facts.</h2>
 
             <div class="d-flex justify-content-between align-items-center">
 
@@ -407,9 +412,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut minus distinctio pariatur
                         perspiciatis, magni aperiam quam architecto exercitationem consequuntur enim, sed tempora
                         praesentium ad officiis provident libero. Necessitatibus, rerum!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut minus distinctio pariatur
-                            perspiciatis, magni aperiam quam architecto exercitationem consequuntur enim, sed tempora
-                            praesentium ad officiis provident libero. Necessitatibus, rerum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut minus distinctio pariatur
+                        perspiciatis, magni aperiam quam architecto exercitationem consequuntur enim, sed tempora
+                        praesentium ad officiis provident libero. Necessitatibus, rerum!</p>
                 </div>
 
                 <aside class="aside-right"> <!--right carousel-->
@@ -461,32 +466,156 @@
     <!--START THE PORTFOLIO SECTION-->
     <main id="portfolio" class="portfolio-section">
         <div class="container">
-            <h1 class="display-2">// portfolio.</h1>
+            <h1 class="sections-titles display-2">// portfolio.</h1>
 
-            <div class="d-flex justify-content-between align-items-center">
+            <section class=" description d-flex justify-content-between align-items-center">
 
-                <div class="text_col text-left text-white"> <!--about description-->
+                <div class="text_col text-left text-white"> <!--portfolio description-->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo eaque beatae, alias
                         dolorum magnam error velit consequatur possimus ipsam quas perferendis facere nesciunt veritatis
                         corporis officiis obcaecati eum! Rerum!
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt expedita laudantium, enim
                         asperiores illum quia dolorem pariatur repudiandae quod accusantium.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut minus distinctio pariatur
-                        perspiciatis, magni aperiam quam architecto exercitationem consequuntur enim, sed tempora
-                        praesentium ad officiis provident libero. Necessitatibus, rerum!</p>
                 </div>
 
                 <div class=""> <!--right image-->
 
                 </div>
-            </div>
+            </section>
+
+            <section class="gallery-section">
+                <h2 class="sub-title display-4 text-secondary">web design.</h2>
+
+                <div class="galley-grid-wrapper">
+                    <div class="project">
+                        <img class="project-image" src="images/screenshot-portfolio/wordpress/home.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/screenshot-portfolio/wordpress/about.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/screenshot-portfolio/wordpress/services.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/screenshot-portfolio/wordpress/shop.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/screenshot-portfolio/DNA-magazine/homepage.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/screenshot-portfolio/DNA-magazine/blog.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/screenshot-portfolio/DNA-magazine/school.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <!--OVERLAY-->
+                    <div class="overlay">
+                        <div class="overlay-inner">
+                            <button class="close">close X</button>
+                            <img>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-section">
+                <h2 class="sub-title display-4 text-secondary">graphic and illustration.</h2>
+            
+                <div class="galley-grid-wrapper">
+                    <div class="project">
+                        <img class="project-image" src="images/illustrations/NABIL.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+            
+                    <div class="project">
+                        <img class="project-image" src="images/illustrations/MELANZANE finish.png" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+            
+                    <div class="project">
+                        <img class="project-image" src="images/" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+            
+                    <div class="project">
+                        <img class="project-image" src="images/" />
+                        <p>websites</p>
+                        <h3 class="project-title"> front-end</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+            
+                    <!--OVERLAY-->
+                    <div class="overlay">
+                        <div class="overlay-inner">
+                            <button class="close">close X</button>
+                            <img>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
     <!--START THE CONTACTS SECTION-->
     <main id="contacts" class="contacts-section">
         <div class="container">
-            <h1 class="display-2">// contacts.</h1>
+            <h1 class="sections-titles display-2">// contacts.</h1>
 
             <div class="d-flex justify-content-between align-items-center">
 
@@ -524,6 +653,24 @@
         crossorigin="anonymous"></script>
 
     <script>
+        const buttons = document.querySelectorAll('.project');
+        const overlay = document.querySelector('.overlay');
+        const overlayImage = document.querySelector('.overlay-inner img');
+
+        function open(e) {
+            overlay.classList.add('open');
+            const src = e.currentTarget.querySelector('img').src;
+            overlayImage.src = src;
+        }
+
+        function close() {
+            overlay.classList.remove('open');
+        }
+
+        buttons.forEach(button => button.addEventListener('click', open));
+        overlay.addEventListener('click', close);
+
+
 
     </script>
 

@@ -5,9 +5,9 @@
         padding: 0 1rem;
 
         a {
-           color: $primary !important;
-           font-size: 1.4rem;
-           font-weight: 600;
+            color: $primary !important;
+            font-size: 1.6rem;
+            font-weight: 600;
 
             &:hover,
             &:active {
@@ -16,4 +16,17 @@
         }
 
     }
+
+    //NAVBAR DROPDOWN
+    .dropdown-menu.show {
+        background-color: $dark !important;
+        padding: 0;
+        border: none;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: transparent !important;
+    }
 }
+
