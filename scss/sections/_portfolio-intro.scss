@@ -7,18 +7,20 @@
 
     .gallery-section {
         width: 100%;
+        padding-top: 5rem;
 
         .galley-grid-wrapper {
-            height: 100vh;
+            height: 800px;
             display: grid;
-            grid-template-columns: repeat(4, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 2fr 2fr;
-            grid-gap: 30px;
+            grid-gap: 60px 30px;
 
             .project {
                 position: relative;
                 background: $primary;
                 overflow: hidden;
+                border-radius: 0.375rem;
 
                 img {
                     position: absolute;
@@ -99,19 +101,28 @@
 
             .close {
                 position: absolute;
-                top: 6px;
+                top: 10px;
                 right: 10px;
                 background: none;
                 outline: 0;
-                color: $dark;
+                color: $primary;
+                font-size: 2rem;
                 border: 0;
-                font-weight: 400;
-                text-transform: uppercase;
-                letter-spacing: 2px;
 
                 &:hover {
                     color: $secondary;
                 }
+            }
+
+            .chevron {
+                position: sticky;
+                bottom: 0;
+                right: 50%;
+                background: none;
+                outline: 0;
+                color: $primary;
+                font-size: 2rem;
+                border: 0;
             }
 
             .project-image {

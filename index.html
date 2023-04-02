@@ -361,7 +361,7 @@
                     <h3>adobe.</h3>
 
                     <div class="d-flex flex-row justify-content-evenly">
-                        <div class="flex-column">
+                        <div class="adobe-col flex-column text-center">
                             <img class="adobe-i" src="images/icons/photoshop.png" alt="photoshop-icon">
                             <p>Photoshop</p>
 
@@ -372,7 +372,7 @@
                             <p>InDesign</p>
                         </div>
 
-                        <div class="flex-column">
+                        <div class="adobe-col flex-column text-center">
                             <img class="adobe-i" src="images/icons/xd.png" alt="xd-icon">
                             <p>Adobe XD</p>
                         </div>
@@ -468,9 +468,10 @@
         <div class="container">
             <h1 class="sections-titles display-2">// portfolio.</h1>
 
+            <!--portfolio description-->
             <section class=" description d-flex justify-content-between align-items-center">
 
-                <div class="text_col text-left text-white"> <!--portfolio description-->
+                <div class="text_col text-left text-white">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo eaque beatae, alias
                         dolorum magnam error velit consequatur possimus ipsam quas perferendis facere nesciunt veritatis
                         corporis officiis obcaecati eum! Rerum!
@@ -483,68 +484,79 @@
                 </div>
             </section>
 
-            <section class="gallery-section">
-                <h2 class="sub-title display-4 text-secondary">web design.</h2>
+            <section id="web-dev" class="gallery-section">
+                <h2 class="sub-title display-4 text-secondary">web developement.</h2>
+                <p class="pb-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ab
+                    fugiat dolorem
+                    accusamus, doloremque aliquid aperiam ad, officiis excepturi ducimus laborum? Veritatis possimus at
+                    odio voluptatum dolor eos numquam nulla.</p>
 
                 <div class="galley-grid-wrapper">
+
+                    <!--WORDPRESS PROJECT-->
                     <div class="project">
-                        <img class="project-image" src="images/screenshot-portfolio/wordpress/home.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image" src="images/gallery-images/screenshot-portfolio/wordpress/home.png">
+
+                        <h3 class="project-title">wordpress</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
 
                     <div class="project">
-                        <img class="project-image" src="images/screenshot-portfolio/wordpress/about.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image" src="images/gallery-images/screenshot-portfolio/wordpress/about.png">
+
+                        <h3 class="project-title">wordpress</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
 
                     <div class="project">
-                        <img class="project-image" src="images/screenshot-portfolio/wordpress/services.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image"
+                            src="images/gallery-images/screenshot-portfolio/wordpress/services.png">
+
+                        <h3 class="project-title">wordpress</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
 
                     <div class="project">
-                        <img class="project-image" src="images/screenshot-portfolio/wordpress/shop.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image" src="images/gallery-images/screenshot-portfolio/wordpress/shop.png">
+
+                        <h3 class="project-title">wordpress</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <!--HTML + CSS PROJECT-->
+                    <div class="project">
+                        <img class="project-image"
+                            src="images/gallery-images/screenshot-portfolio/DNA-magazine/homepage.png">
+
+                        <h3 class="project-title">html + css</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
 
                     <div class="project">
-                        <img class="project-image" src="images/screenshot-portfolio/DNA-magazine/homepage.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image"
+                            src="images/gallery-images/screenshot-portfolio/DNA-magazine/blog.png">
+
+                        <h3 class="project-title">html + css</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
 
                     <div class="project">
-                        <img class="project-image" src="images/screenshot-portfolio/DNA-magazine/blog.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
-                        <div class="project-overlay">
-                            <button class="view-button">view more</button>
-                        </div>
-                    </div>
+                        <img class="project-image"
+                            src="images/gallery-images/screenshot-portfolio/DNA-magazine/school.png">
 
-                    <div class="project">
-                        <img class="project-image" src="images/screenshot-portfolio/DNA-magazine/school.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <h3 class="project-title">html + css</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
@@ -553,60 +565,112 @@
                     <!--OVERLAY-->
                     <div class="overlay">
                         <div class="overlay-inner">
-                            <button class="close">close X</button>
-                            <img>
+                            <button class="close">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </button>
+                            <img />
+
+                            <button class="chevron">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <img />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="gallery-section">
-                <h2 class="sub-title display-4 text-secondary">graphic and illustration.</h2>
-            
+            <section id="graphic" class="gallery-section">
+                <h2 class="sub-title display-4 text-secondary">digital illustration. <br>
+                    free hand draws.</h2>
+                <p class="pb-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ab
+                    fugiat dolorem
+                    accusamus,
+                    doloremque aliquid aperiam ad, officiis excepturi ducimus laborum? Veritatis possimus at odio
+                    voluptatum dolor eos
+                    numquam nulla.
+                </p>
+
                 <div class="galley-grid-wrapper">
+
+                    <!--ILLUSTRATOR PROJECT-->
                     <div class="project">
-                        <img class="project-image" src="images/illustrations/NABIL.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image" src="images/gallery-images/illustrations/NABIL.png">
+
+                        <h3 class="project-title">illustrator</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
-            
+
                     <div class="project">
-                        <img class="project-image" src="images/illustrations/MELANZANE finish.png" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image" src="images/gallery-images/illustrations/MELANZANE finish.png">
+
+                        <h3 class="project-title">illustrator</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
-            
+
                     <div class="project">
-                        <img class="project-image" src="images/" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image" src="images/gallery-images/illustrations/krix.jpg">
+
+                        <h3 class="project-title">illustrator</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
-            
+
                     <div class="project">
-                        <img class="project-image" src="images/" />
-                        <p>websites</p>
-                        <h3 class="project-title"> front-end</h3>
+                        <img class="project-image" src="images/gallery-images/illustrations/kappa.jpg">
+
+                        <h3 class="project-title">illustrator</h3>
                         <div class="project-overlay">
                             <button class="view-button">view more</button>
                         </div>
                     </div>
-            
+
+                    <!--FREE HAND-->
+                    <div class="project">
+                        <img class="project-image" src="images">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
                     <!--OVERLAY-->
-                    <div class="overlay">
-                        <div class="overlay-inner">
-                            <button class="close">close X</button>
-                            <img>
-                        </div>
-                    </div>
+                    <button class="close">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                    <img />
                 </div>
             </section>
         </div>
@@ -661,10 +725,14 @@
             overlay.classList.add('open');
             const src = e.currentTarget.querySelector('img').src;
             overlayImage.src = src;
+
+            document.querySelector("body").style.overflow = 'hidden';
         }
 
         function close() {
             overlay.classList.remove('open');
+
+            document.querySelector("body").style.overflow = 'visible';
         }
 
         buttons.forEach(button => button.addEventListener('click', open));

@@ -32,9 +32,14 @@
     .skills-info {
         width: 25%;
 
+        .adobe-col > p {
+            margin-left: 1.2rem;
+        }
+
         .adobe-i {
-            width: 3rem;
+            width: 2.8rem;
             padding-bottom: 0.5rem;
+            margin-left: 1rem;
         }
     }
 }

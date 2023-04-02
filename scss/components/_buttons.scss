@@ -6,18 +6,20 @@ button {
 
 //BUTTON FOR CARDS LINK
 .card-button {
-    background-color: $primary;
+    background-color: none;
     border-radius: 28px;
     border: 1px solid $primary;
     display: inline-block;
-    color: $white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 17px;
-    padding: 10px 28px;
+    color: $primary;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px $primary;
+    text-transform: uppercase;
 
     &:hover {
+        transition: $ease;
         background-color: $secondary;
     }
 }
@@ -26,17 +28,18 @@ button {
 .view-button {
     background: none;
     outline: none;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 2px;
-    border: 1px solid $white;
-    color: $white;
+    border: 1px solid $secondary;
+    border-radius: 28px;
+    color: $secondary;
     text-transform: uppercase;
     padding: 10px;
 
     &:hover {
         transition: $ease;
-        background: $white;
-        color: $secondary;
+        background: $secondary;
+        color: $primary;
         transform: scale(1.05);
     }
 }
