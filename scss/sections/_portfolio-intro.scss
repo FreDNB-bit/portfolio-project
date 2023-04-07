@@ -1,16 +1,17 @@
 @use '../custom' as *;
+@use '../components/mixins' as *;
 
 .portfolio-section {
     background-color: $dark;
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     width: 100%;
 
     .gallery-section {
         width: 100%;
-        padding-top: 5rem;
+        padding-top: 3rem;
 
         .galley-grid-wrapper {
-            height: 800px;
+            height: 100vh;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 2fr 2fr;
@@ -32,7 +33,7 @@
                     position: absolute;
                     text-align: center;
                     width: 100%;
-                    padding: 1em 0;
+                    padding: 1rem 0;
                     text-transform: uppercase;
                     letter-spacing: 2px;
                     z-index: 3;
@@ -44,11 +45,11 @@
                     text-align: center;
                     white-space: nowrap;
                     bottom: 0;
-                    font-weight: 100;
-                    font-size: 0.8em;
+                    font-weight: 300;
+                    font-size: 1rem;
                     z-index: 3;
                     text-transform: uppercase;
-                    color: $dark;
+                    color: $purple;
                     letter-spacing: 2px;
                 }
             }
@@ -59,7 +60,7 @@
             }
 
             .project-overlay {
-                background: rgba(darken($primary, 10%), .9);
+                @include overlayGradient;
                 height: 100%;
                 grid-column: 1 / -1;
                 grid-row: 1 / -1;
@@ -92,9 +93,9 @@
             }
 
             .overlay-inner {
-                background: $white;
+                background: $dark;
                 width: auto;
-                padding: 30px;
+                padding: 50px;
                 position: relative;
                 opacity: 1;
             }
@@ -102,7 +103,7 @@
             .close {
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                right: 5px;
                 background: none;
                 outline: 0;
                 color: $primary;
@@ -112,17 +113,6 @@
                 &:hover {
                     color: $secondary;
                 }
-            }
-
-            .chevron {
-                position: sticky;
-                bottom: 0;
-                right: 50%;
-                background: none;
-                outline: 0;
-                color: $primary;
-                font-size: 2rem;
-                border: 0;
             }
 
             .project-image {

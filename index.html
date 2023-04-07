@@ -29,7 +29,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="menuItems">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">// home.</a>
@@ -54,7 +54,7 @@
                         <a class="nav-link" href="#portfolio">// portfolio.</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">// contacts.</a>
+                        <a class="nav-link" href="#contacts">// contacts.</a>
                     </li>
                 </ul>
             </div>
@@ -99,7 +99,7 @@
 
     <!--START THE INTRO-CARDS SECTION (settings in 'components/_cards.scss')-->
     <main class="intro-section-cards container-fluid">
-        <section class="d-flex justify-content-evenly align-items-stretch text-center">
+        <section class="d-flex justify-content-evenly align-items-stretch text-center flex-wrap">
 
             <!--CARD 1-->
             <div class="card intro-cards">
@@ -112,7 +112,9 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                         the card's content.</p>
 
-                    <a href="#" class="card-button">Card link</a>
+                    <a href="#skills">
+                        <button class="card-button" type="button">see my skills</button>
+                    </a>
                 </div>
             </div>
 
@@ -127,7 +129,9 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                         the card's content.</p>
 
-                    <a href="#" class="card-button">Card link</a>
+                    <a href="#graphic">
+                        <button class="card-button" type="button">see some artwork</button>
+                    </a>
                 </div>
             </div>
 
@@ -135,14 +139,17 @@
             <div class="card intro-cards">
                 <div class="card-body">
                     <div class="icon">
-                        <i class="fa-solid fa-palette"></i>
+                        <img class="msg-icon" src="images/icons/message.png" alt="message-icon">
+
                     </div>
 
-                    <h3 class="card-title">Traditional Arts</h3>
+                    <h3 class="card-title">Wanna ask somethings?</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                         the card's content.</p>
 
-                    <a href="#" class="card-button">Card link</a>
+                    <a href="#contacts">
+                        <button class="card-button" type="button">say hello :&#41;</button>
+                    </a>
                 </div>
             </div>
 
@@ -154,7 +161,7 @@
         <div class="container">
             <h1 class="sections-titles display-2">// about.</h1>
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-start">
 
                 <section class="description text-left text-white"> <!--about description-->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo eaque beatae, alias
@@ -165,9 +172,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut minus distinctio pariatur
                         perspiciatis, magni aperiam quam architecto exercitationem consequuntur enim, sed tempora
                         praesentium ad officiis provident libero. Necessitatibus, rerum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut minus distinctio pariatur
+                        perspiciatis, magni aperiam quam architecto exercitationem consequuntur enim, sed tempora
+                        praesentium ad officiis provident libero. Necessitatibus, rerum!</p>
                 </section>
 
-                <section class="about-right-image text-center">
+                <section class="about-right-image text-right">
                     <img src="images/intro-section-potrait-min.png" class="img-fluid my-potrait" alt="my-potrait">
                 </section>
             </div>
@@ -177,93 +187,97 @@
     <!--START MY STORY SECTION-->
     <section id="my-story" class="my-story-section">
         <div class="container">
-            <h2 class="sub-title display-4">my story.</h2>
+            <h2 class="sub-title display-4">// my story.</h2>
 
             <div class="timeline-wrapper">
                 <div class="timeline">
+
                     <div class="entry">
                         <div class="title">
-                            <h3 class="display-4">1990</h3>
-
+                            <h3 class="year">1990</h3>
                         </div>
-                        <div class="body">
-                            <h3 class="display-6">Birth - day</h3>
-                            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
-                                omnis.</p>
-                            <img src="images/carousel-random-facts/badroom.jpg" alt="">
+                        <div class="year-body d-flex">
+                            <div>
+                                <h3 class="display-6">Birth - day</h3>
+                                <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa
+                                    pariatur
+                                    omnis.</p>
+
+                                <img class="img-thumbnail" src="images/carousel-random-facts/badroom.jpg" alt="">
+                            </div>
                         </div>
                     </div>
+
                     <div class="entry">
                         <div class="title">
                             <h3>2004</h3>
-
                         </div>
-                        <div class="body">
+                        <div class="year-body">
                             <h3 class="display-6">First great change</h3>
                             <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
                                 omnis.</p>
-                            <img src="images/carousel-random-facts/badroom.jpg" alt="">
+                            <img class="img-thumbnail" src="images/carousel-random-facts/badroom.jpg" alt="">
 
                         </div>
                     </div>
+
                     <div class="entry">
                         <div class="title">
                             <h3>2009</h3>
-
                         </div>
-                        <div class="body">
+                        <div class="year-body">
                             <h3 class="display-6">High school degree</h3>
                             <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
                                 omnis.</p>
-                            <img src="images/carousel-random-facts/badroom.jpg" alt="">
+                            <img class="img-thumbnail" src="images/carousel-random-facts/badroom.jpg" alt="">
                         </div>
                     </div>
+
                     <div class="entry">
                         <div class="title">
                             <h3>2013</h3>
-
                         </div>
-                        <div class="body">
+                        <div class="year-body">
                             <h3 class="display-6">Second great change</h3>
                             <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
                                 omnis.</p>
-
+                            <img class="img-thumbnail" src="images/carousel-random-facts/badroom.jpg" alt="">
                         </div>
                     </div>
+
                     <div class="entry">
                         <div class="title">
                             <h3>2016</h3>
-
                         </div>
-                        <div class="body">
+                        <div class="year-body">
                             <h3 class="display-6">Move to Turin... again!</h3>
                             <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
                                 omnis.</p>
-
+                            <img class="img-thumbnail" src="images/carousel-random-facts/badroom.jpg" alt="">
                         </div>
                     </div>
+
                     <div class="entry">
                         <div class="title">
                             <h3>2019</h3>
-
                         </div>
-                        <div class="body">
+                        <div class="year-body">
                             <h3 class="display-6">Start coding</h3>
                             <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
                                 omnis.</p>
-
+                            <img class="img-thumbnail" src="images/carousel-random-facts/badroom.jpg" alt="">
                         </div>
                     </div>
+
                     <div class="entry">
                         <div class="title">
                             <h3>2023</h3>
-
                         </div>
-                        <div class="body">
+                        <div class="year-body">
                             <h3 class="display-6">Here I am</h3>
                             <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur
                                 omnis.</p>
-
+                            <img class="img-thumbnail" src="images/carousel-random-facts/badroom.jpg" alt="">
                         </div>
                     </div>
 
@@ -277,7 +291,7 @@
     <!--START THE SKILL SECTION-->
     <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="sub-title display-4">skills.</h2>
+            <h2 class="sub-title display-4">// skills.</h2>
 
             <section class="d-flex flex-row justify-content-between align-items-center first-s-skill"> <!--dev row-->
 
@@ -401,7 +415,7 @@
     <!--START THE RANDOM_FACTS SECTION-->
     <section id="random-facts" class="randomFacts-section">
         <div class="container">
-            <h2 class="sub-title display-4">random facts.</h2>
+            <h2 class="sub-title display-4">// random facts.</h2>
 
             <div class="d-flex justify-content-between align-items-center">
 
@@ -469,7 +483,7 @@
             <h1 class="sections-titles display-2">// portfolio.</h1>
 
             <!--portfolio description-->
-            <section class=" description d-flex justify-content-between align-items-center">
+            <section class="description d-flex justify-content-between align-items-center">
 
                 <div class="text_col text-left text-white">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo eaque beatae, alias
@@ -479,9 +493,6 @@
                         asperiores illum quia dolorem pariatur repudiandae quod accusantium.</p>
                 </div>
 
-                <div class=""> <!--right image-->
-
-                </div>
             </section>
 
             <section id="web-dev" class="gallery-section">
@@ -567,11 +578,6 @@
                         <div class="overlay-inner">
                             <button class="close">
                                 <i class="fa-regular fa-circle-xmark"></i>
-                            </button>
-                            <img />
-
-                            <button class="chevron">
-                                <i class="fa-solid fa-chevron-down"></i>
                             </button>
                             <img />
                         </div>
@@ -679,15 +685,47 @@
     <!--START THE CONTACTS SECTION-->
     <main id="contacts" class="contacts-section">
         <div class="container">
-            <h1 class="sections-titles display-2">// contacts.</h1>
+            <h1 class="sections-titles display-2 pb-0">// contacts.</h1>
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
 
-                <div class="text_col text-left text-white"> <!--about description-->
+                <div class="contact-info">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4 class="text-secondary">// my email</h4>
+                        <p class="pb-3">frenky.martini@gmail.com</p>
 
+                        <i class="fa-solid fa-phone"></i>
+                        <h4 class="text-secondary">// my phone</h4>
+                        <p class="pb-3">+39 3808912549</p>
+
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4 class="text-secondary">// my address</h4>
+                        <p class="pb-3">Turin 10146, Piedmont, Italy</p>
+                    </div>
                 </div>
 
-                <div class=""> <!--right image-->
+                <div class="contact-form">
+                    <h2 class="display-5 pb-3 text-primary">get in touch.</h2>
+
+                    <div class="mb-3">
+                        <label for="name-input" class="form-label">// first name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last-name-input" class="form-label">// last name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email-input" class="form-label">// email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text-area" class="form-label">// leave a message</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+
+                    <button class="form-button text-center">send message</button>
 
                 </div>
             </div>
@@ -714,6 +752,10 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
     <script>

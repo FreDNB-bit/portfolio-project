@@ -1,5 +1,5 @@
 
-@use 'custom';
+@use 'custom' as *;
 
 //IMPORT THE COMPONENTS
 @use 'components/buttons';
@@ -18,8 +18,6 @@
 @use 'sections/my-story';
 @use 'sections/random-facts';
 @use 'sections/portfolio-intro';
-@use 'sections/web-dev';
-@use 'sections/graphic-illustration';
 @use 'sections/contacts';
 @use 'sections/footer';
 
@@ -30,4 +28,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+//SCROLLBAR
+*::-webkit-scrollbar {
+    width: 0.8rem;
+    /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #0f8b8d;
+    /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #a5be00;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #0f8b8d;
+    /* creates padding around scroll thumb */
 }

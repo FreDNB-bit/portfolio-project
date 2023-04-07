@@ -5,22 +5,35 @@ button {
 }
 
 //BUTTON FOR CARDS LINK
-.card-button {
-    background-color: none;
+//FORM BUTTON
+.card-button,
+.form-button {
+    background: transparent;
+    outline: none;
+    border: 1px solid $secondary;
     border-radius: 28px;
-    border: 1px solid $primary;
-    display: inline-block;
-    color: $primary;
-    letter-spacing: 2px;
-    font-size: 15px;
-    font-weight: 600;
     padding: 10px 15px;
-    text-decoration: none;
+    margin: 1.5rem 0;
+
+    color: $secondary;
+    font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
 
     &:hover {
+        background: $secondary;
+        color: $primary;
         transition: $ease;
-        background-color: $secondary;
+        transform: scale(1.05);
+    }
+
+    & a {
+        color: $secondary;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
     }
 }
 
@@ -28,9 +41,9 @@ button {
 .view-button {
     background: none;
     outline: none;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
-    border: 1px solid $secondary;
+    border: 2px solid $secondary;
     border-radius: 28px;
     color: $secondary;
     text-transform: uppercase;

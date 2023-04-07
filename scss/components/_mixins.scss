@@ -1,1 +1,9 @@
 @use '../custom' as *;
+
+@mixin overlayGradient {
+    background: linear-gradient(to top, rgba($primary, 0.97) 58%, rgba($secondary, 0.85));
+}
+
+@mixin cardsGradient {
+    background: linear-gradient(-155deg, rgba($secondary, 0.8) 45%, rgba($primary, 0.8) 65%);
+}
