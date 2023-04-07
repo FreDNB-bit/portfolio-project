@@ -11,6 +11,11 @@
     h3 {
         color: $secondary;
         margin-bottom: 1.3rem;
+
+        &.text-purple {
+            color: $details;
+            padding-bottom: 1.3rem;
+        }
     }
 
     i {

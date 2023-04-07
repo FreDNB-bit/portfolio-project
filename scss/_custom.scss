@@ -2,13 +2,15 @@
 $smoky-black: #0f0f0f; //background
 $transparent-black: #0f0f0f7c;
 $floral-white: #fff8f0; //text
-$dark-cyan: #0f8b8d; //titles and highlights
-$acid-green: #a5be00; //details
+$dark-cyan: #0f8b8d; //titles 
+$acid-green: #a5be00; //highlights
+$ultra-violette: #626293; //details
 
-$purple: #8C1D6B; //complemental color
+$purple: #a54388; //complemental color
 
 $primary: $dark-cyan;
 $secondary: $acid-green;
+$details: $ultra-violette;
 $dark: $smoky-black;
 $white: $floral-white;
 $transparent: $transparent-black;
@@ -31,7 +33,12 @@ $black: #000;
 //TIMELINE
 $gutter: 50px;
 $border-width: 4px;
-$dot-diameter: 22px;
+$dot-diameter: 30px;
+
+//FORM
+$input-btn-padding-y: .475rem;
+$input-btn-focus-color: $details;
+$input-color: $white;
 
 
 //IMPORT BOOTSTRAP 5
