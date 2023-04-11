@@ -25,7 +25,7 @@
         font-size: 3rem;
     }
 
-    .first-s-skill {
+    .webdev-skills {
         margin-bottom: 5rem;
     }
 
@@ -34,17 +34,63 @@
         padding-right: 2rem;
     }
 
-    .skills-info {
-        width: 25%;
+    .skills-info-col {
+        width: 50%;
 
-        .adobe-col > p {
-            margin-left: 1.2rem;
-        }
+        .skills-info {
+            width: 50%;
 
-        .adobe-i {
-            width: 2.8rem;
-            padding-bottom: 0.5rem;
-            margin-left: 1rem;
+            .adobe-col>p {
+                margin-left: 1.2rem;
+            }
+
+            .adobe-i {
+                width: 2.8rem;
+                padding-bottom: 0.5rem;
+                margin-left: 1rem;
+            }
         }
     }
+
+
+}
+
+
+//MEDIA QUERIES
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+    .webdev-skills,
+    .graphic-skills {
+        flex-direction: column !important;
+
+        .skills-intro {
+            width: 100%;
+        }
+
+        .skills-info-col {
+            width: 100%;
+            padding-top: 1.5rem;
+
+            .skills-info {
+                width: 50%;
+            }
+        }
+
+
+    }
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+        .skills-info-col {
+            flex-direction: column !important;
+            align-items: center;
+
+            .skills-info:nth-child(4){
+                align-self: center;
+            }
+        }
 }

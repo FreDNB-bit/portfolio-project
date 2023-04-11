@@ -21,3 +21,35 @@
     }
 }
 
+//CREATIVITY COLUMN TEXT ANIMATION
+//WAVE EFFECT
+@keyframes waveAnim {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-70px);
+    }
+}
+
+//CHANGE COLOR
+@keyframes colorChange {
+    0% {
+        color: $primary;
+    }
+
+    40% {
+        color: $secondary;
+    }
+
+    70% {
+        color: $details;
+    }
+
+    100% {
+        color: $primary;
+    }
+}

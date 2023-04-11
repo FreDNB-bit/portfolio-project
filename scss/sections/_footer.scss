@@ -47,3 +47,14 @@ footer {
         }
     }
 }
+
+//MEDIA QUERIES
+@media (min-width: 992px) {
+    footer {
+        article {
+            width: 30%;
+        }
+
+    }
+
+}

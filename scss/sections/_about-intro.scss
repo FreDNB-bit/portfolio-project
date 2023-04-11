@@ -17,7 +17,28 @@
 
         .my-potrait {
             width: 350px;
-            margin-left: 5rem;
+        }
+    }
+}
+
+
+//MEDIA QUERIES
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .about-col {
+        display: flex;
+        flex-direction: column !important;
+
+        .description {
+            width: 90%;
+            order: 1;
+        }
+
+        .about-right-image {
+            margin: 3rem auto 0 auto;
+            width: 90%;
+            order: 2;
         }
     }
 }

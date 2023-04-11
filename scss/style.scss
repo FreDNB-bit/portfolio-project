@@ -50,3 +50,8 @@
     border: 3px solid #0f8b8d;
     /* creates padding around scroll thumb */
 }
+
+//NAVBAR TOGGLER
+.navbar-toggler:focus {
+    color: $details;
+}
