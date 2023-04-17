@@ -6,8 +6,14 @@ footer {
     width: 100%;
     height: 100%;
 
+    .footer-col {
+        justify-content: center;
+        align-items: center;
+    }
+
+
     article {
-        width: 20%;
+        width: 33%;
     }
 
     .footer-logo img {
@@ -15,7 +21,7 @@ footer {
     }
 
     .social i {
-        font-size: 3rem;
+        font-size: 3.8rem;
         padding: 2rem;
 
         &:hover {
@@ -48,13 +54,49 @@ footer {
     }
 }
 
+
+
 //MEDIA QUERIES
-@media (min-width: 992px) {
+
+@media (min-width: 993px) and (max-width: 1199.98px) {
     footer {
+        .social i {
+            font-size: 3.2rem;
+        }
+    }
+
+}
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 992px) {
+
+    .footer-col {
+        flex-direction: column !important;
+
+
         article {
-            width: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: row !important;
+            justify-content: center;
         }
 
+        .social {
+            order: 1;
+        }
+
+        .menu-link {
+            order: 2;
+        }
+
+        .footer-logo {
+            order: 3;
+
+            & img {
+                width: 200px;
+            }
+        }
     }
 
 }

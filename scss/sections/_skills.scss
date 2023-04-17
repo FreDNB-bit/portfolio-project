@@ -71,10 +71,11 @@
 
         .skills-info-col {
             width: 100%;
-            padding-top: 1.5rem;
+            
 
             .skills-info {
-                width: 50%;
+                width: 100%;
+                padding-top: 1.5rem;
             }
         }
 
@@ -88,9 +89,10 @@
         .skills-info-col {
             flex-direction: column !important;
             align-items: center;
+            
 
-            .skills-info:nth-child(4){
-                align-self: center;
+            .skills-info:last-child {
+                align-self: center !important;
             }
         }
 }

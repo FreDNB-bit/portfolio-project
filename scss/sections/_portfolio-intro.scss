@@ -13,6 +13,7 @@
         .galley-grid-wrapper {
             height: 100vh;
             display: grid;
+            grid-auto-flow: row;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 2fr 2fr;
             grid-gap: 60px 30px;
@@ -40,6 +41,8 @@
                 }
 
                 .project-title {
+                    background-color: rgba($white, 0.6);
+                    margin: auto;
                     position: absolute;
                     width: 100%;
                     text-align: center;
@@ -52,6 +55,10 @@
                     color: $details;
                     letter-spacing: 2px;
                 }
+            }
+
+            .project:hover .project-title {
+                background-color: transparent;
             }
 
             // project hover overlay
@@ -78,7 +85,7 @@
                 position: fixed;
                 overflow-y: scroll;
                 background: rgba($dark, 0.7);
-                top: 8rem;
+                top: 0;
                 right: 0;
                 bottom: 0;
                 left: 0;
@@ -93,7 +100,7 @@
             }
 
             .overlay-inner {
-                background: $dark;
+                background: $gray;
                 width: auto;
                 padding: 50px;
                 position: relative;
@@ -122,4 +129,35 @@
         }
     }
 
+}
+
+
+//MEDIA QUERIES
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .portfolio-section {
+        .gallery-section {
+            .galley-grid-wrapper {
+                grid-template-columns: repeat(2, 4fr);
+                grid-template-rows: repeat(4, 2fr);
+                grid-gap: 60px 30px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 991.98px) and (max-width: 1198.98px) {
+    .portfolio-section {
+        .gallery-section {
+            .galley-grid-wrapper {
+                .project {
+                    img {
+                        left: 85px;
+                    }
+                }
+            }
+        }
+    }
 }
