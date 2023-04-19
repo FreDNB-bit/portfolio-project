@@ -3,7 +3,7 @@
 .randomFacts-section {
     background: $dark;
     color: $white;
-    padding: 5rem 0 3rem 0;
+    padding: 2.5rem 0 3rem 5rem;
 
     h2 {
         color: $primary;
@@ -14,6 +14,20 @@
     .aside-right {
         width: 47%;
     }
+
+    .carousel-caption {
+        padding: 0;
+        background-color: $transparent;
+
+        h5 {
+            padding-top: 0.4rem;
+        }
+        h5,
+        p {
+            margin: 0;
+            font-size: small;
+        }
+    }
 }
 
 
@@ -21,6 +35,10 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+    .randomFacts-section{
+        padding-top: 2rem;
+    }
+
     .random-col {
         display: flex;
         flex-direction: column !important;

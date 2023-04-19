@@ -61,7 +61,8 @@
     }
 
     .cinfo-col {
-        align-items: center;
+        align-items: left;
+        margin-left: 25%;
     }
 }
 
@@ -72,5 +73,9 @@
         & p {
             font-size: medium;
         }
+    }
+
+    .cinfo-col {
+        margin-left: 0;
     }
 }

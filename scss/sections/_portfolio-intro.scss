@@ -43,6 +43,7 @@
                 .project-title {
                     background-color: rgba($white, 0.6);
                     margin: auto;
+                    padding-top: 0.2rem;
                     position: absolute;
                     width: 100%;
                     text-align: center;
@@ -50,6 +51,7 @@
                     bottom: 0;
                     font-weight: 800;
                     font-size: 1.1rem;
+                    text-shadow: 1px 1px $transparent;
                     z-index: 3;
                     text-transform: uppercase;
                     color: $details;
@@ -59,6 +61,7 @@
 
             .project:hover .project-title {
                 background-color: transparent;
+                transition: $ease;
             }
 
             // project hover overlay
@@ -80,7 +83,6 @@
             }
 
             //project popup overlay
-
             .overlay {
                 position: fixed;
                 overflow-y: scroll;
@@ -134,6 +136,7 @@
 
 //MEDIA QUERIES
 
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
     .portfolio-section {
@@ -154,9 +157,21 @@
             .galley-grid-wrapper {
                 .project {
                     img {
-                        left: 85px;
+                        left: 195px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .portfolio-section {
+        .gallery-section {
+            padding-top: 0;
+
+            .galley-grid-wrapper {
+                grid-gap: 30px 15px;
             }
         }
     }

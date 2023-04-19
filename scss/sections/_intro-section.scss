@@ -4,7 +4,7 @@
 
 .intro-section {
     background-color: $dark;
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
 
     width: 100%;
@@ -44,7 +44,8 @@
 
     // IMAGE COLUMN
     .my-potrait {
-        width: 350px;
+        padding-left: 1rem;
+        width: 850px;
     }
 }
 
@@ -72,7 +73,7 @@
         }
 
         .potrait-col {
-            width: 300px;
+            width: 500px;
             order: 1;
         }
 
@@ -90,6 +91,13 @@
             order: 3;
         }
     }
+}
 
-
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .intro-col {
+        .potrait-col {
+            width: 360px;
+        }
+    }
 }
