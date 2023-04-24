@@ -11036,6 +11036,7 @@ p {
 .intro-section .my-potrait {
   padding-left: 1rem;
   width: 850px;
+  justify-content: center;
 }
 
 @media (max-width: 1520.98px) {
@@ -11107,7 +11108,7 @@ p {
 .skills-section {
   background: #0f0f0f;
   color: #fff;
-  padding-top: 4rem;
+  padding: 3rem 0;
 }
 .skills-section h2 {
   color: #0f8b8d;
@@ -11295,16 +11296,16 @@ p {
   background-image: url(../../images/my-story/1990-baby-me.jpg);
 }
 .entry .year-body .container .i2 {
-  background-image: url(../../images/carousel-random-facts/inknstuff.jpg);
+  background-image: url(../../images/place-holder.jpg);
 }
 .entry .year-body .container .i3 {
-  background-image: url(../../images/carousel-random-facts/upsidedown.jpg);
+  background-image: url(../../images/place-holder.jpg);
 }
 .entry .year-body .container .i4 {
   background-image: url(../../images/my-story/2013-move-to-finland.jpg);
 }
 .entry .year-body .container .i5 {
-  background-image: url(../../images/carousel-random-facts/inknstuff.jpg);
+  background-image: url(../../images/place-holder.jpg);
 }
 .entry .year-body .container .i6 {
   background-image: url(../../images/my-story/2019-start-coding.jpg);
@@ -11348,7 +11349,7 @@ p {
 .randomFacts-section {
   background: #0f0f0f;
   color: #fff;
-  padding: 2.5rem 0 3rem 5rem;
+  padding: 2.5rem 0 3rem 0;
 }
 .randomFacts-section h2 {
   color: #0f8b8d;
