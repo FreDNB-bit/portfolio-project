@@ -11296,16 +11296,16 @@ p {
   background-image: url(../../images/my-story/1990-baby-me.jpg);
 }
 .entry .year-body .container .i2 {
-  background-image: url(../../images/place-holder.jpg);
+  background-image: url(../../images/my-story/2004-little-me.jpg);
 }
 .entry .year-body .container .i3 {
-  background-image: url(../../images/place-holder.jpg);
+  background-image: url(../../images/my-story/2009-with-dad-at-rome.jpg);
 }
 .entry .year-body .container .i4 {
   background-image: url(../../images/my-story/2013-move-to-finland.jpg);
 }
 .entry .year-body .container .i5 {
-  background-image: url(../../images/place-holder.jpg);
+  background-image: url(../../images/my-story/2016-back-to-turin.jpg);
 }
 .entry .year-body .container .i6 {
   background-image: url(../../images/my-story/2019-start-coding.jpg);
@@ -11349,7 +11349,7 @@ p {
 .randomFacts-section {
   background: #0f0f0f;
   color: #fff;
-  padding: 2.5rem 0 3rem 0;
+  padding: 2rem 0 3rem 0;
 }
 .randomFacts-section h2 {
   color: #0f8b8d;
@@ -11657,6 +11657,13 @@ footer .copyright-text span {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #a5be00;
 }
 
 *::-webkit-scrollbar {

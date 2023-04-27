@@ -30,6 +30,14 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
 //SCROLLBAR
 *::-webkit-scrollbar {
     width: 0.9rem;
