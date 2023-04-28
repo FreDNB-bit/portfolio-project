@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Francesca Martini Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="professional portfolio by Francesca Martini" />
+    <meta property="og:url" content="https://github.com/FreDNB-bit/portfolio-project.git" />
+    <meta property="og:image" content="images/logo.png" />
+
     <title>Francesca Martini Portfolio</title>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
@@ -100,7 +108,8 @@
 
                 <!--start potrait image column-->
                 <section class="intros text-center potrait-col">
-                    <img src="images/intro-section-potrait.png" class="img-fluid my-potrait" alt="my-potrait-with-a-brain">
+                    <img src="images/intro-section-potrait.png" class="img-fluid my-potrait"
+                        alt="my-potrait-with-a-brain">
                 </section>
 
                 <!--start coding column-->
@@ -228,8 +237,7 @@
                 </article>
 
                 <article class="about-right-image text-center">
-                    <img src="images/about-section-potrait.png" class="img-fluid my-potrait"
-                        alt="my-potrait-rounded">
+                    <img src="images/about-section-potrait.png" class="img-fluid my-potrait" alt="my-potrait-rounded">
                 </article>
             </section>
         </div>
@@ -424,26 +432,31 @@
                         things that make me feel good!
                     </p>
                     <p>
-                        &#127793; Over the past few years I have discovered that I have a green thumb; plants can really give
+                        &#127793; Over the past few years I have discovered that I have a green thumb; plants can really
+                        give
                         great satisfaction if
                         treated with care and in the right way. Currently more than 20 kinds of plants live with me!
                     </p>
                     <p>
-                        &#127926; Music has always accompanied me, sure I have changed tastes over time, but she has always been
+                        &#127926; Music has always accompanied me, sure I have changed tastes over time, but she has
+                        always been
                         there, keeping me company
                         in my headphones and marking time. From punk-rock to electronic music, I can boast a nice
-                        collection of vinyl and CDs.
-                        &#127911; Yes, I am also a DJ, here in Turin I had the opportunity to organize events and play with my
+                        collection of vinyl and CDs. <br>
+                        &#127911; Yes, I am also a DJ, here in Turin I had the opportunity to organize events and play
+                        with my
                         crew <a href="https://www.facebook.com/ElectroFrame" target="_blank">ELECTROFRAME</a> in many
                         clubs.
                     </p>
                     <p>
-                        &#127918; After watching the animated series 'Arcane', and discovering that the story is taken from the
+                        &#127918; After watching the animated series 'Arcane', and discovering that the story is taken
+                        from the
                         video game 'League of Legends'
                         I ventured to the Summoners Rift's... and never went back.
                     </p>
                     <p>
-                        &#128248; Not to be outdone is my passion for photography; I have studied the basics of this subject and
+                        &#128248; Not to be outdone is my passion for photography; I have studied the basics of this
+                        subject and
                         put them into practice
                         whenever I have the opportunity!
                     </p>
@@ -928,26 +941,27 @@
                     <h2 class="display-5 pb-5 text-primary">let's get in touch!</h2>
 
                     <div class="mb-3">
-                        <label for="name-input" class="form-label">// first and last name</label>
-                        <input type="text" class="form-control">
+                        <label for="name-input" class="form-label">// first and last name <span
+                                class="required">*</span></label>
+                        <input type="text" class="form-control" id="name" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="email-input" class="form-label">// email</label>
-                        <input type="text" class="form-control">
+                        <label for="email-input" class="form-label">// email <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="email" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="object-input" class="form-label">// object</label>
-                        <input type="email" class="form-control">
+                        <label for="object-input" class="form-label">// object <span class="required">*</span></label>
+                        <input type="email" class="form-control" id="object" required>
                     </div>
 
                     <div class="mb-4">
-                        <label for="text-area" class="form-label">// leave a message</label>
-                        <textarea class="form-control" rows="6"></textarea>
+                        <label for="text-area" class="form-label" id>// leave a message</label>
+                        <textarea class="form-control" id="message" rows="6"></textarea>
                     </div>
 
-                    <button type="submit" class="form-button text-center">send message</button>
+                    <button type="submit" class="form-button text-center" onclick="sendMail()">send message</button>
 
                 </section>
 
@@ -1083,21 +1097,59 @@
 
         //SCROLL TO THE SECTIONS
         const scrollToTargetAdjusted = target => {
-                const headerHeight = 100;
-                const { offsetTop } = target;
-                const offsetPosition = offsetTop - headerHeight;
-                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-            };
+            const headerHeight = 100;
+            const { offsetTop } = target;
+            const offsetPosition = offsetTop - headerHeight;
+            window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+        };
 
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', e => {
-                    e.preventDefault();
-                    const target = document.querySelector(anchor.getAttribute('href'));
-                    if (target) {
-                        scrollToTargetAdjusted(target);
-                    }
-                });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    scrollToTargetAdjusted(target);
+                }
             });
+        });
+
+
+    </script>
+
+    <!--EMAILJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("rnjvZe8AW2oODneKj");
+        })();
+    </script>
+    <script>
+        function sendMail() {
+            var params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                object: document.getElementById("object").value,
+                message: document.getElementById("message").value
+            }
+
+            const serviceID = "service_0cv1g1m";
+            const templateID = "template_f93ai3o";
+
+            emailjs.send(serviceID, templateID, params)
+                .then(
+                    res => {
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("object").value = "";
+                        document.getElementById("message").value = "";
+                        console.log(res);
+                        alert("Your message sent successfully");
+
+                    }
+                )
+                .catch((err) => console.log(err));
+        }
 
 
     </script>
