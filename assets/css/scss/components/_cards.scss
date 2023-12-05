@@ -1,0 +1,149 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.card {
+    border: none;
+}
+
+// CARDS INTRO-SECTION
+.intro-section-cards {
+    background: $dark;
+    padding: 5rem 0;
+    width: 100%;
+    height: 100%;
+
+    .intro-cards {
+        background: $dark;
+        color: $white;
+        width: 22rem;
+        padding: 0 0.2rem;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            @include cardsGradient;
+            filter: blur(28px);
+            opacity: 0.8;
+            border-radius: inherit;
+        }
+
+        &::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            border-radius: inherit;
+        }
+
+        .icon {
+            color: $primary;
+            font-size: 3.2rem;
+            padding: 1rem 0 1.5rem 0;
+
+            &:nth-child(2) {
+                font-size: 3rem;
+            }
+        }
+
+        .msg-icon {
+            width: 3.4rem;
+        }
+
+        .card-title {
+            color: $details;
+            font-size: 1.65rem;
+        }
+
+        hr {
+            width: 15%;
+            margin: auto;
+            padding: 0.8rem;
+            color: $details;
+            border-radius: 2px;
+        }
+
+        .card-text {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+//PROJECTS CARDS
+.portfolio-section {
+    #my-project {
+        .three-box-overview {
+            .projects-card {
+                width: 360px;
+                height: auto;
+                background-color: $dark;
+                opacity: 0.95;
+                transition: transform .3s;
+
+                &:hover {
+                    opacity: 1;
+                    transition: 0.3s;
+                    transform: scale(1.01)
+                }
+
+                .card-body {
+                    padding-bottom: 3rem;
+
+                    .card-title {
+                        color: $details;
+                        font-size: 1.45rem;
+                    }
+
+                    .schools-logo {
+                        padding-bottom: 2rem;
+                        height: 90px;
+                    }
+                }
+
+                .card-text {
+                    color: $floral-white;
+                    font-size: 1rem;
+                }
+
+                .card-img-top {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+//MEDIA QUERIES
+@media (max-width: 1399.98px) {
+    .projects-card {
+        width:280px;
+    }
+}
+
+@media (max-width: 1055.98px) {
+
+    .intro-cards:nth-child(3),
+    .projects-card:nth-child(3) {
+        margin-top: 4rem;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .intro-cards:nth-child(2),
+    .projects-card:nth-child(2) {
+        margin-top: 4rem;
+    }
+}

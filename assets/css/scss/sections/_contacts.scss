@@ -1,0 +1,53 @@
+@use '../custom' as *;
+
+.contacts-section {
+    background-color: $dark;
+    padding: 3rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    .contact-form {
+        width: 55%;
+        height: 100%;
+        margin-top: 2rem;
+        .form-label {
+            font-size: 1.5rem;
+            color: $secondary;
+            .required {
+                color: $details;
+            }
+        }
+        .form-control {
+            border: 1px solid $primary;
+            width: 100%;
+            background-color: $dark;
+        }
+    }
+    .contact-img {
+        width: 40%;
+        height: 100%;
+        padding: 2rem;
+        img {
+            width: 30rem;
+            align-self: center;
+        }
+    }
+}
+//MEDIA QUERIES
+@media (max-width: 991.98px) {
+    .contacts-col {
+        display: flex;
+        flex-direction: column !important;
+        .contact-form {
+            width: 100%;
+            order: 1;
+        }
+        .contact-img {
+            width: 100%;
+            order: 2;
+            img {
+                width: 320px;
+                align-self: center;
+            }
+        }
+    }
+}

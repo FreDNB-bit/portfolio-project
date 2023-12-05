@@ -1,0 +1,49 @@
+@use '../custom' as *;
+
+.about-section {
+    background-color: $dark;
+    padding: 4rem 0 2.5rem 0;
+    width: 100%;
+    height: 100%;
+    .description {
+        width: 65%;
+        padding: 0.5rem;
+        #text-carousel {
+            width: 100%;
+            .carousel-inner {
+                padding: 1.5rem 0;
+                h3 {
+                    text-align: left;
+                    color: $details;
+                    font-weight: 500;
+                }
+            }
+        }
+        .about-btn-box{
+            padding-top: 1.8rem;
+        }
+    }
+    .about-right-image {
+        width: 35%;
+        .my-potrait {
+            width: 350px;
+            border-radius: 50%;
+        }
+    }
+}
+//MEDIA QUERIES
+@media (max-width: 991.98px) {
+    .about-col {
+        display: flex;
+        flex-direction: column !important;
+        .description {
+            width: 100%;
+            order: 1;
+        }
+        .about-right-image {
+            margin: 3rem auto 0 auto;
+            width: 90%;
+            order: 2;
+        }
+    }
+}

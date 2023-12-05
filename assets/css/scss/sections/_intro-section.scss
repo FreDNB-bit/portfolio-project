@@ -1,0 +1,85 @@
+@use '../custom' as *;
+
+//see also the 'intro-section' in typography
+.intro-section {
+    background-color: $dark;
+    padding-top: 10.5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+    .intros {
+        width: 30%;
+        h4 {
+            display: inline-block;
+        }
+    }
+    //TEXT ANIMATION ON CREATIVITY COLUMN
+    .text-wrapper {
+        position: relative;
+        span.first-letter {
+            position: relative;
+            display: inline-block;
+            letter-spacing: -15px;
+            margin-bottom: 16px;
+            animation: waveAnim 2s 2, colorChange 3s infinite;
+            animation-delay: calc(.1s * var(--i));
+        }
+    }
+    // TEXT ANIMATION ON CODING COLUMN
+    .line {
+        position: relative;
+        border-right: 5px solid $secondary;
+        width: 10ch;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .typing {
+        animation: typewriter 2.5s steps(12) 1s 1 normal both,
+            blinkCursor 1s steps(13) infinite normal;
+    }
+    // IMAGE COLUMN
+    .my-potrait {
+        padding-left: 1rem;
+        width: 850px;
+        justify-content: center;
+    }
+}
+//MEDIA QUERIES
+@media (max-width: 1520.98px) {
+    .intro-title {
+        &--intro {
+            font-size: smaller;
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    .intro-col {
+        flex-direction: column !important;
+        .intros {
+            width: 90%;
+        }
+        .potrait-col {
+            width: 500px;
+            order: 1;
+        }
+        .creativity-col {
+            padding-top: 4rem;
+            order: 2;
+            .text-wrapper {
+                letter-spacing: 6px;
+            }
+        }
+        .coding-col {
+            padding-top: 2rem;
+            order: 3;
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .intro-col {
+        padding-bottom: 1rem;
+        .potrait-col {
+            width: 360px;
+        }
+    }
+}

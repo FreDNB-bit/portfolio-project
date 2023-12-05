@@ -1,0 +1,68 @@
+@use 'custom' as *;
+
+//IMPORT THE COMPONENTS
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/mixins';
+@use 'components/typography';
+@use 'components/animations';
+
+
+//IMPORT THE SECTIONS
+@use 'sections/navbar';
+@use 'sections/intro-section';
+@use 'sections/about-intro';
+@use 'sections/resume';
+@use 'sections/skills';
+@use 'sections/my-story';
+@use 'sections/random-facts';
+@use 'sections/portfolio-intro';
+@use 'sections/projects';
+@use 'sections/contacts';
+@use 'sections/footer';
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $dark;
+}
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+ul {
+    list-style: none;
+}
+//SCROLLBAR
+*::-webkit-scrollbar {
+    width: 0.9rem;
+    cursor: pointer;
+    /* width of the entire scrollbar */
+}
+*::-webkit-scrollbar-track {
+    background: #0f8b8d;
+    /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #a5be00;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #0f8b8d;
+    /* creates padding around scroll thumb */
+}
+//NAVBAR TOGGLER
+.navbar-toggler:focus {
+    color: $details;
+}

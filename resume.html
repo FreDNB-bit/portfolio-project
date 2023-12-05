@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web development portfolio and resume project, create a website with html and css">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Sass, portfolio, resume, curriculum vitae">
+    <meta name="author" content="Francesca Martini">
+
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Francesca Martini Resume" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="professional resume by Francesca Martini" />
+    <meta property="og:url" content="https://frednb-bit.github.io/francesca-martini-portfolio" />
+    <!--IMPORTANT!! CHANGE THE LINK TO GITHUB PAGES!!-->
+    <meta property="og:image" content="images/logo.png" />
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <!--FONT + FAVICON-->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--JS EXTERNAL LINK-->
+    <script type="text/javascript" src="./assets/js/scroll-behavior.js"></script>
+    <script type="text/javascript" src="./assets/js/portfolio-overlay.js"></script>
+    <script type="text/javascript" src="./assets/js/email.js"></script>
+
+    <!--JS BUNDLE-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--JS EMAIL-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <title>Francesca Martini Resume</title>
+
+</head>
+
+<body>
+    <!--START THE NAVBAR SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top m-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="fm-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="menu navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">// home.</a>
+                    </li>
+
+                    <!--DROPDOWN LINK ABOUT-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nevbar" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            // about.
+                            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html#about">// introduction.</a></li>
+                            <li><a class="dropdown-item" href="#resume">// resume.</a></li>
+                            <li><a class="dropdown-item" href="index.html#my-story">// my story.</a></li>
+                            <li><a class="dropdown-item" href="index.html#random-facts">// random facts.</a></li>
+                            <li><a class="dropdown-item" href="index.html#skills">// skills.</a></li>
+                        </ul>
+                    </li>
+                    <!--DROPDOWN END-->
+
+                    <!--DROPDOWN LINK PROJECTS-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            // portfolio.
+                            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html#portfolio">// overview.</a></li>
+                            <li><a class="dropdown-item" href="index.html#my-project">// projects.</a></li>
+                            <li><a class="dropdown-item" href="index.html#web-dev-screen">// screenshot.</a></li>
+                            <li><a class="dropdown-item" href="index.html#art-gallery">// art gallery.</a></li>
+                        </ul>
+                    </li>
+                    <!--DROPDOWN END-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacts">// contacts.</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--RESUME MAIN-->
+    <main id="cv-section">
+
+        <!--HEADER-->
+        <header id="cv" class="cv-intro">
+            <div class="container-fluid text-center">
+                <h1 class="sections-titles display-4">// FRANCESCA MARTINI</h1>
+                <h2 class="sub-title">Front end developing and Graphic arts resume</h2>
+            </div>
+        </header>
+
+        <!--PERSONAL DETAILS-->
+        <section class="container cv-details">
+            <article class="cv-picture">
+                <img src="assets/images/resume-photo.jpg" alt="my-colored-potrait">
+            </article>
+
+            <article class="cv-description">
+                <h1 class="text-primary">// personal details.</h1>
+
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item list-icon">
+                        <i>
+                            <img src="assets/images/icons/birthday-cake.png" alt="birthday-cake-icon">
+                        </i>
+                    </li>
+                    <li class="list-group-item list-title">birthday:</li>
+                    <li class="list-group-item list-content">11/05/1990</li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item list-icon">
+                        <i>
+                            <img src="assets/images/icons/united-nations.png" alt="united-nation-icon">
+                        </i>
+                    </li>
+                    <li class="list-group-item list-title">nationality:</li>
+                    <li class="list-group-item list-content">Italian</li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item list-icon">
+                        <i>
+                            <img src="assets/images/icons/mobile-phone.png" alt="mobile-phone-icon">
+                        </i>
+                    </li>
+                    <li class="list-group-item list-title">phone number:</li>
+                    <li class="list-group-item list-content">+39 3808912549</li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item list-icon">
+                        <i>
+                            <img src="assets/images/icons/email.png" alt="email-icon">
+                        </i>
+                    </li>
+                    <li class="list-group-item list-title">e-mail:</li>
+                    <li class="list-group-item list-content">frenky.martini@gmail.com</li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item list-icon">
+                        <i>
+                            <img src="assets/images/icons/pin.png" alt="address-pin-icon">
+                        </i>
+                    </li>
+                    <li class="list-group-item list-title">address:</li>
+                    <li class="list-group-item list-content">San Salvario, 10126 Turin, Piedmont, Italy</li>
+                </ul>
+                <ul>
+                    <li class="cv-btn px-2">
+                        <a href="assets/pdf/francescaMartiniResume.pdf" download="francesca-martini-cv">
+                            <button class="cv-button m-2" type="button">download resume</button>
+                        </a>
+                        <a href="index.html#contacts">
+                            <button class="cv-button m-2" type="button">hire me</button>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!--DIGITAL SKILLS-->
+        <section class="container cv-skills">
+            <h1 class="py-2">// digital skills.</h1>
+
+            <div class="skills-bar-wrapper d-flex">
+                <article class="skills-bar webdev-bar">
+                    <h2 class="mb-2 text-center">web developing.</h2>
+
+                    <div class="bar-container py-2">
+                        <h3 class="bar-title">html, css:</h3>
+                        <div class="progress progress-color">
+                            <div class="progress-bar prog-b1" role="progressbar" style="width: 90%" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="bar-title">javascript:</h3>
+                        <div class="progress progress-color">
+                            <div class="progress-bar prog-b2" role="progressbar" style="width: 35%" aria-valuenow="35"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="bar-title">wordpress:</h3>
+                        <div class="progress progress-color">
+                            <div class="progress-bar prog-b3" role="progressbar" style="width: 55%" aria-valuenow="55"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skills-bar graphic-bar">
+                    <h2 class="mb-2 text-center">graphic.</h2>
+
+                    <div class="bar-container py-2">
+                        <h3 class="bar-title">illustrator:</h3>
+                        <div class="progress progress-color">
+                            <div class="progress-bar prog-b1" role="progressbar" style="width: 85%" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="bar-title">photoshop:</h3>
+                        <div class="progress progress-color">
+                            <div class="progress-bar prog-b2" role="progressbar" style="width: 90%" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="bar-title">indesign:</h3>
+                        <div class="progress progress-color">
+                            <div class="progress-bar prog-b3" role="progressbar" style="width: 51%" aria-valuenow="51"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+        </section>
+
+        <!--LANGUAGES-->
+        <section class="container cv-languages">
+            <h1 class="py-2">// language skills.</h1>
+
+            <table class="table table-dark table-borderless table-responsive  align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="2"></th>
+                        <th scope="col">
+                            <h3>listening.</h3>
+                        </th>
+                        <th scope="col">
+                            <h3>reading.</h3>
+                        </th>
+                        <th scope="col">
+                            <h3>writing.</h3>
+                        </th>
+                        <th scope="col">
+                            <h3>oral production.</h3>
+                        </th>
+                        <th scope="col">
+                            <h3>oral interaction.</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <h2>english:</h2>
+                        </th>
+                        <td class="td-show">excellent knowledge.</td>
+                        <td class="td-noshow"></td>
+                        <td class="td-noshow">C1</td>
+                        <td class="td-noshow">C2</td>
+                        <td class="td-noshow">C2</td>
+                        <td class="td-noshow">C2</td>
+                        <td class="td-noshow">C2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <h2>italian:</h2>
+                        </th>
+                        <td>mother language.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--EDUCATION AND TRAINING-->
+        <section class="container cv-education">
+            <h1 class="py-3">// education and training.</h1>
+
+            <article class="list-group">
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-2 pb-3">full stack developer.</h2>
+                        <small class="text-secondary">01/09/2022 – NOW</small>
+                    </div>
+                    <ul class="mb-1 text-white list-group-content">
+                        <li>HTML e CSS</li>
+                        <li>JavaScript Basic</li>
+                        <li>JavaScript Advanced</li>
+                        <li>Angular</li>
+                        <li>PHP e MySQL</li>
+                        <li>WordPress</li>
+                    </ul>
+                    <small class="text-detail"><a href="https://www.start2impact.it" target="_blank">Start2Impact
+                            University</a></small>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-2 py-3">professional training course in web development <br>
+                            with html, css and wordpress.</h2>
+                        <small class="text-white"><span class="text-secondary">06/2022 – 08/2022</span> <br>
+                            TOT: 240 H.</small>
+                    </div>
+                    <ul class="mb-1 text-white list-group-content">
+                        <li>
+                            Mod. 1 - Search Engines to Google | Introduction to SEO | Introduction, managing text and
+                            images with HTML (80 H);
+                        </li>
+                        <li>
+                            Mod. 2 - CSS style sheets | Photo editing tools, introduction to Photoshop and
+                            Illustrator (80 H);
+                        </li>
+                        <li>
+                            Mod. 3 - Google Analytics | The SEO in WordPress Real | Wordpress with Elementor and
+                            WooCommerce (72 H);
+                        </li>
+                        <li>
+                            General health and safety + Rights and Duties of workers in administration (8 H).
+                        </li>
+                    </ul>
+                    <small class="text-detail"><a href="https://www.foritgroup.it" target="_blank">ForIT -
+                            Lombardia</a></small>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-2 py-3">assistant to the educational facility.</h2>
+                        <small class="text-white"><span class="text-secondary">02/2022 – 05/2022</span> <br>
+                            TOT: 250 H.</small>
+                    </div>
+                    <ul class="mb-1 text-white list-group-content">
+                        <li>
+                            Hints of childhood psychology;
+                        </li>
+                        <li>
+                            Professional ethics;
+                        </li>
+                        <li>
+                            Principles and techniques of communication;
+                        </li>
+                        <li>
+                            Elements of child care and hygiene;
+                        </li>
+                        <li>
+                            Elements of environmental and food hygiene;
+                        </li>
+                        <li class="pb-3">
+                            Elements of facility organization: nurseries and preschools.
+                        </li>
+                    </ul>
+                    <a href="assets/pdf/TesinaFrancescaMartiniA.S.E2022.pdf" target="_blank">
+                        <button class="cv-button m-2 d-block" type="button">SEE MY THESIS</button>
+                    </a>
+                    <small class="text-detail"><a href="https://www.enaip.piemonte.it" target="_blank">Enaip Piemonte -
+                            CSF</a></small>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-2 py-3">high school graduation.</h2>
+                        <small class="text-white"><span class="text-secondary">09/2004 – 07/2009</span> <br>
+                            Grosseto, Tuscany</small>
+                    </div>
+                    <p class="mb-1">During the three-year program (Sculpture major), I participated with the class in a
+                        one-year course in
+                        ceramics in which we experimented with various techniques of modeling, painting and firing our
+                        works, a basic goldsmithing course and an internship at the Academy of Fine Arts in Carrara.</p>
+                    <small class="text-detail">Liceo Artistico Pietro Aldi</small>
+                </div>
+            </article>
+        </section>
+
+        <!--WORKING EXPERIENCE-->
+        <section class="container cv-experience">
+            <h1 class="py-2">// working experience.</h1>
+
+            <article class="list-group">
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-1">educational assistant.</h2>
+                        <small class="text-white"><span class="text-secondary">17/10/2022 – 30/06/2023</span> <br>
+                            Turin, Piedmont</small>
+                    </div>
+                    <p class="mb-1">The educational facility assistant performs cleaning and minor maintenance duties on
+                        school premises,
+                        outdoor spaces and furniture, and also has duties of reception and supervision towards the
+                        children and the public, as well as general custody/supervision of the school premises and
+                        supporting the work
+                        of the educators.</p>
+                    <small class="text-detail">COOPERATIVA ORSA (KCS)</small>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-1">waitress and bartender.</h2>
+                        <small class="text-white"><span class="text-secondary">2010 – 2023</span> <br>
+                            Tuscany and Piedmont</small>
+                    </div>
+                    <p class="mb-1">I have worked within different realities and with different degrees of
+                        responsibility during these years, from
+                        pub-pizzeria
+                        to downtown restaurant, from neighborhood bar to catering services during different events. All
+                        of these
+                        jobs have shaped me and taught me to be patient and willing, to be responsible
+                        of facilities and materials as well as people, to communicate effectively with people and to
+                        work calmly in a team, setting goals and accomplishing them. Punctuality, accuracy and
+                        professionalism are the basis of my working attitude.</p>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-1">inventory clerk.</h2>
+                        <small class="text-white"><span class="text-secondary">2021</span> <br>
+                            Turin, Piedmont</small>
+                    </div>
+                    <p class="mb-1">Inventory Check: physical merchandise count with handheld and shelf reorder</p>
+                    <small class="text-detail">BARCODE ITALIA</small>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-1">au pair.</h2>
+                        <small class="text-white"><span class="text-secondary">10/2013 – 12/2014</span> <br>
+                            Espoo, Finland</small>
+                    </div>
+                    <p class="mb-1">Au pair:consists of being a live-in babysitter, therefore helping with children
+                        (meals, activities, entertainment) and with housekeeping (cleaning, shopping).</p>
+                    <small class="text-detail">GRÄSBECK FAMILY</small>
+                </div>
+            </article>
+
+        </section>
+
+        <!--OTHER INFORMATION-->
+        <section class="container cv-others">
+            <h1 class="py-2">// more information.</h1>
+
+            <article>
+                <h2 class="mb-2 pb-3">driving license.</h2>
+
+                <div class="px-3">
+                    <h3 class="driving">italian driving license "<span class="text-primary">B</span>"</h3>
+                    <p>since 2008</p>
+                </div>
+
+            </article>
+
+            <article>
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-2 pb-3">organizational skills.</h2>
+                    </div>
+                    <ul class="mb-1 text-white list-group-content">
+                        <li>Excellent organizational and management skills;</li>
+                        <li>Excellent time management skills;</li>
+                        <li>Punctuality, tidiness and cleanliness.</li>
+                    </ul>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h2 class="mb-2 py-3">communication and interpersonal skills.</h2>
+                    </div>
+                    <ul class="text-white list-group-content">
+                        <li>Excellent interpersonal and communication skills, in teams and also with children;</li>
+                        <li>Predisposition to contact with the public, customer management, problem solving;</li>
+                        <li>Excellent teamwork skills.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!--START FOOTER SECTION-->
+    <footer class="text-center">
+
+        <section class="d-flex flex-row footer-col">
+
+            <!--LOGO-->
+            <article class="footer-logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </article>
+
+            <!--SOCIAL MEDIA-->
+            <article class="social">
+                <a href="https://www.instagram.com/hare.aart/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/francesca-martini-239aa21b8/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/FreDNB-bit" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </article>
+
+
+            <!--MENU LINK-->
+            <article class="menu-link">
+                <ul class="d-flex flex-column">
+                    <li class="list-inline-item"><a href="#home">// home.</a></li>
+                    <li class="list-inline-item"><a href="#about">// about.</a></li>
+                    <li class="list-inline-item"><a href="#portfolio">// portfolio.</a></li>
+                    <li class="list-inline-item"><a
+                            href="https://www.termsfeed.com/live/c0ec0139-e2f3-48df-b308-009905cde555"
+                            target="_blank">//
+                            terms.</a></li>
+                    <li class="list-inline-item"><a href="#">// privacy policy.</a></li>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center copyright-text">
+            © 2023 Copyright: Handmade with <span>&#x2764;</span> by Francesca Martini
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

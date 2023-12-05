@@ -1,0 +1,70 @@
+@use '../custom' as *;
+
+button {
+    cursor: pointer;
+}
+
+//BUTTON FOR CARDS LINK
+//FORM BUTTON
+.card-button,
+.form-button,
+.see-more-link,
+.about-button,
+.visit-button,
+.cv-button {
+    background: transparent;
+    outline: none;
+    border: 1px solid $secondary;
+    border-radius: 28px;
+    padding: 10px 15px;
+    margin: 1.5rem 0;
+    color: $secondary;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $secondary;
+        color: $primary;
+        transition: $ease;
+        transform: scale(1.05);
+    }
+
+    & a {
+        color: $secondary;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.see-more-link {
+    margin-top: 4rem;
+}
+
+//ABOUT INTRODUCTION BUTTON
+.portbtn {
+    margin-left: 2.5rem;
+}
+
+//GALLERY VIEW BUTTON
+.view-button {
+    background: none;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 2px solid $secondary;
+    border-radius: 28px;
+    color: $secondary;
+    text-transform: uppercase;
+    padding: 10px;
+
+    &:hover {
+        transition: $ease;
+        background: $secondary;
+        color: $primary;
+        transform: scale(1.05);
+    }
+}

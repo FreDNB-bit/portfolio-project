@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web development portfolio project, create a website with html and css">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Sass, portfolio, curriculum vitae">
+    <meta name="author" content="Francesca Martini">
+
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Francesca Martini Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="professional portfolio by Francesca Martini" />
+    <meta property="og:url" content="https://frednb-bit.github.io/francesca-martini-portfolio" />
+    <!--IMPORTANT!! CHANGE THE LINK TO GITHUB PAGES!!-->
+    <meta property="og:image" content="images/logo.png" />
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <!--FONT + FAVICON-->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--JS EXTERNAL LINK-->
+    <script type="text/javascript" src="./assets/js/scroll-behavior.js"></script>
+    <script type="text/javascript" src="./assets/js/portfolio-overlay.js"></script>
+    <script type="text/javascript" src="./assets/js/email.js"></script>
+
+    <!--JS BUNDLE-->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--JS EMAIL-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <title>Francesca Martini Portfolio</title>
+
+</head>
+
+<body>
+
+    <!--START THE NAVBAR SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top m-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/images/logo.png" alt="fm-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="menu navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">// home.</a>
+                    </li>
+
+                    <!--DROPDOWN LINK ABOUT-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nevbar" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            // about.
+                            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#about">// introduction.</a></li>
+                            <li><a class="dropdown-item" href="resume.html">// resume.</a></li>
+                            <li><a class="dropdown-item" href="#my-story">// my story.</a></li>
+                            <li><a class="dropdown-item" href="#random-facts">// random facts.</a></li>
+                            <li><a class="dropdown-item" href="#skills">// skills.</a></li>
+                        </ul>
+                    </li>
+                    <!--DROPDOWN END-->
+
+                    <!--DROPDOWN LINK PROJECTS-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            // portfolio.
+                            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#portfolio">// overview.</a></li>
+                            <li><a class="dropdown-item" href="#my-project">// projects.</a></li>
+                            <li><a class="dropdown-item" href="#web-dev-screen">// screenshot.</a></li>
+                            <li><a class="dropdown-item" href="#art-gallery">// art gallery.</a></li>
+                        </ul>
+                    </li>
+                    <!--DROPDOWN END-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">// contacts.</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--START THE INTRO SECTION-->
+    <header id="home" class="intro-section">
+        <div class="container-fluid">
+            <div class="d-flex flex-row justify-content-evenly align-items-center text-white intro-col">
+
+                <!--start creativity column-->
+                <section class="intros text-start creativity-col">
+                    <h1 class="intro-title display-2">
+                        <span class="intro-title--intro">
+                            <div class="text-wrapper">
+                                <span class="first-letter" style="--i:1">C</span>
+                                <span class="first-letter" style="--i:2">R</span>
+                                <span class="first-letter" style="--i:3">E</span>
+                                <span class="first-letter" style="--i:4">A</span>
+                                <span class="first-letter" style="--i:5">T</span>
+                                <span class="first-letter" style="--i:6">I</span>
+                                <span class="first-letter" style="--i:7">V</span>
+                                <span class="first-letter" style="--i:8">I</span>
+                                <span class="first-letter" style="--i:9">T</span>
+                                <span class="first-letter" style="--i:10">Y</span>
+                            </div>
+                        </span>
+                    </h1>
+
+                    <span class="intro-title--description lh-base">
+                        The left side of the brain is the one dedicated to
+                        <h4 class="text-primary">creativity</h4>
+                        and fantasy, and here is mine! If you're looking
+                        for
+                        <h4 class="text-secondary">inspiration</h4>,
+                        someone to
+                        <h4 class="text-primary">create your logo</h4> or a
+                        <h4 class="text-secondary">portrait</h4>
+                        of your four-legged friend, you've landed in the
+                        right place.
+                    </span>
+
+                </section>
+
+                <!--start potrait image column-->
+                <section class="intros text-center potrait-col">
+                    <img src="assets/images/intro-section-potrait.png" class="img-fluid my-potrait"
+                        alt="my-potrait-with-a-painted-brain">
+                </section>
+
+                <!--start coding column-->
+                <section class="intros text-end coding-col">
+                    <h1 class="intro-title display-2">
+                        <span class="intro-title--intro line typing">
+                            <div class="text-wrapper">
+                                <span>&lt; coding &gt;</span>
+                            </div>
+                        </span>
+                    </h1>
+
+                    <span class="intro-title--description lh-base mb-1">
+                        The right side of the brain, more
+                        <h4 class="text-primary">mathematical</h4>
+                        and
+                        <h4 class="text-secondary">practical</h4>,
+                        is what ignited my passion for web development.
+                        Along with
+                        <h4 class="text-secondary">punctuality</h4>,
+
+                        <h4 class="text-primary">accuracy</h4>,
+                        and
+                        <h4 class="text-primary">attention to
+                            detail</h4>,
+                        will make me a clever front-end developer.
+                    </span>
+
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <!--START THE INTRO-CARDS SECTION (settings in 'scss/components/_cards.scss')-->
+    <main class="intro-section-cards container-fluid">
+        <section class="d-flex justify-content-evenly align-items-stretch text-center flex-wrap">
+
+            <!--CARD 1-->
+            <div class="card intro-cards">
+                <div class="card-body">
+                    <div class="icon">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+
+                    <h1 class="card-title">Web Developing</h1>
+                    <hr>
+                    <p class="card-text">
+                        Research, prototype setting, design and build are the steps that will lead us to the end of our
+                        journey and the
+                        realization of your project.
+                    </p>
+
+                    <a href="#skills">
+                        <button class="card-button" type="button">see my skills</button>
+                    </a>
+                </div>
+            </div>
+
+            <!--CARD 2-->
+            <div class="card intro-cards">
+                <div class="card-body">
+                    <div class="icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <h1 class="card-title">Graphic and Illustration</h1>
+                    <hr>
+                    <p class="card-text">
+                        From sketch to finished canvas, from your idea to the perfect graphic, whatever your goal, I'll
+                        lead you through the
+                        creation process to final project.
+                    </p>
+
+                    <a href="#art-gallery">
+                        <button class="card-button" type="button">see some artwork</button>
+                    </a>
+                </div>
+            </div>
+
+            <!--CARD 3-->
+            <div class="card intro-cards">
+                <div class="card-body">
+                    <div class="icon">
+                        <img class="msg-icon" src="assets/images/icons/message.png" alt="message-icon">
+
+                    </div>
+
+                    <h1 class="card-title">Wanna ask somethings?</h1>
+                    <hr>
+                    <p class="card-text">
+                        If you have any questions, or would like to talk about your project and get an idea of the path
+                        forward, just drop me a
+                        line here.
+                    </p>
+
+                    <a href="#contacts">
+                        <button class="card-button" type="button">say hello :&#41;</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--START THE ABOUT-INTRO SECTION-->
+    <main id="about" class="about-section">
+        <div class="container">
+            <h1 class="sections-titles display-2">// about.</h1>
+
+            <section class="d-flex flex-row justify-content-between align-items-center about-col">
+
+                <article class="description text-left text-white"> <!--about description-->
+                    <h2 class="text-secondary display-5 pb-3">introduction.</h2>
+                    <p> Hello there!
+                        My name is Francesca Martini, but since I was a little girl everyone knows me as Frenky. I am 33
+                        years old
+                        and I live in Turin, in northern Italy.
+                    </p>
+                    <p>
+                        This is my personal website, writed all by myself! <br>
+                        Here what you will find in here!
+                    </p>
+
+                    <div id="text-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2400">
+                                <h3 class="display-6">// web design ideas</h3>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2400">
+                                <h3 class="display-6">// web developing projects</h3>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2400">
+                                <h3 class="display-6">// professionalism and collaboration</h3>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2400">
+                                <h3 class="display-6">// professional curriculum</h3>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2400">
+                                <h3 class="display-6">// creative ideas</h3>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2400">
+                                <h3 class="display-6">// traditional art works</h3>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2400">
+                                <h3 class="display-6">// graphic projects</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        I'm a <a href="https://www.start2impact.it" target="_blank">Start2Impact</a> university web
+                        development
+                        student and web developer aspirant. <br>
+                        How do I see myself in the future? The most famous and professional front-end web developer!
+                    </p>
+
+                    <div class="d-flex justify-content-start about-btn-box">
+                        <a href="resume.html">
+                            <button class="about-button" type="button">see my curriculum</button>
+                        </a>
+
+                        <a href="#portfolio">
+                            <button class="about-button portbtn" type="button">go to the portfolio</button>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="about-right-image text-center"> <!--about image-->
+                    <img src="assets/images/about-section-potrait.png" class="img-fluid my-potrait"
+                        alt="my-potrait-rounded">
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!--START MY STORY SECTION-->
+    <main id="my-story" class="my-story-section">
+        <div class="container">
+
+            <h1 class="sections-titles display-4">// my story.</h1>
+
+            <section class="timeline-wrapper">
+                <div class="timeline accordion js-accordion" id="my-story-accordion">
+
+                    <!--1990-->
+                    <article class="entry">
+                        <div class="title">
+                            <h3 class="year">1990</h3>
+                        </div>
+                        <div class="year-body accordion-item js-accordion-item">
+                            <div class="accordion-header js-accordion-header" id="headingOne">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <h2>birth - day.</h2>
+                                </button>
+
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#my-story-accordion">
+                                <div class="accordion-body js-accordion-body">
+                                    <p>
+                                        I was born on May 11, in Turin, and I am the first daughter of my wonderful
+                                        family.
+                                        My parents met kayaking and passed on to me their
+                                        passion for nature and adventures, although I was born in the city I have
+                                        always
+                                        preferred green and wilder places. <br>
+                                        This is me and my mommy.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="container--image i1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!--2004-->
+                    <article class="entry">
+                        <div class="title">
+                            <h3 class="year">2004</h3>
+                        </div>
+                        <div class="year-body accordion-item js-accordion-item">
+                            <div class="accordion-header js-accordion-header" id="headingTwo">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h2>first great change.</h2>
+                                </button>
+
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#my-story-accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        After finishing middle school, my family decided to move to Tuscany, to a
+                                        small town
+                                        where my brother and I could grow
+                                        up with more freedom (and less worry for them). It was difficult at first
+                                        but I am
+                                        grateful for their choice.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="container--image i2">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!--2009-->
+                    <article class="entry">
+                        <div class="title">
+                            <h3 class="year">2009</h3>
+                        </div>
+                        <div class="year-body accordion-item js-accordion-item">
+                            <div class="accordion-header js-accordion-header" id="headingThree">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h2>high school degree.</h2>
+                                </button>
+
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#my-story-accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Despite the turbulence of my high school and teenage years, I finished my
+                                        studies in
+                                        the
+                                        right time and
+                                        after graduating I started working, gaining various experiences and focusing
+                                        on
+                                        restoration services. <br>
+                                        This is me and my daddy when we went to Rome after my degree.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="container--image i3">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!--2013-->
+                    <article class="entry">
+                        <div class="title">
+                            <h3 class="year">2013</h3>
+                        </div>
+                        <div class="year-body accordion-item js-accordion-item">
+                            <div class="accordion-header js-accordion-header" id="headingFour">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h2>second great change.</h2>
+                                </button>
+
+                            </div>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#my-story-accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        At some point I decided to turn all the tables (typical of late adolescence)
+                                        and
+                                        left as
+                                        an au pair, destination
+                                        Finland.
+                                        I had the great fortune to meet a wonderful family that hosted and supported
+                                        me, as
+                                        well
+                                        as my own.
+                                        The plan was to stay, but the cold and homesickness were too much and I
+                                        returned
+                                        home.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="container--image i4">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!--2016-->
+                    <article class="entry">
+                        <div class="title">
+                            <h3 class="year">2016</h3>
+                        </div>
+                        <div class="year-body accordion-item js-accordion-item">
+                            <div class="accordion-header js-accordion-header" id="headingFive">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h2>move to turin... again!</h2>
+                                </button>
+
+                            </div>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#my-story-accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        After a short break at home, I decided to move permanently to Turin
+                                        (...again)
+                                        because I
+                                        would have more opportunities to
+                                        work and grow professionally in a big city rather than in a small town. I
+                                        also
+                                        started
+                                        university and that is where my love for web development was born.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="container--image i5">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!--2019-->
+                    <article class="entry">
+                        <div class="title">
+                            <h3 class="year">2019</h3>
+                        </div>
+                        <div class="year-body accordion-item js-accordion-item">
+                            <div class="accordion-header js-accordion-header" id="headingSix">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <h2>start coding.</h2>
+                                </button>
+
+                            </div>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#my-story-accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        The Covid and lock-down years were decisive in solidifying my passion for
+                                        web
+                                        development. I took and completed several
+                                        related courses, and I began to realize that that was the path I wanted to
+                                        take
+                                        seriously to turn my life around.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="container--image i6">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!--2023-->
+                    <article class="entry">
+                        <div class="title">
+                            <h3 class="year">2023</h3>
+                        </div>
+                        <div class="year-body accordion-item js-accordion-item">
+                            <div class="accordion-header js-accordion-header" id="headingSeven">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <h2>here i am.</h2>
+                                </button>
+
+                            </div>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#my-story-accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        And here I am, more determined than ever to pursue my life project, the one
+                                        that
+                                        will
+                                        change my fortunes forever: to
+                                        become a web developer.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="container--image i7">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!--START THE RANDOM_FACTS SECTION-->
+    <main id="random-facts" class="randomFacts-section">
+        <div class="container">
+            <h1 class="sections-titles display-4">// random facts.</h1>
+
+            <section class="d-flex justify-content-between align-items-center random-col">
+
+                <article class="description text-left text-white"> <!--random facts description-->
+                    <p>
+                        Okay, you've probably guessed how great my passion for the digital world is, let me tell you a
+                        little about the other
+                        things that make me feel good!
+                    </p>
+                    <p>
+                        &#127793; Over the past few years I have discovered that I have a green thumb; plants can really
+                        give
+                        great satisfaction if
+                        treated with care and in the right way. Currently more than 20 kinds of plants live with me!
+                    </p>
+                    <p>
+                        &#127926; Music has always accompanied me, sure I have changed tastes over time, but she has
+                        always been
+                        there, keeping me company
+                        in my headphones and marking time. From punk-rock to electronic music, I can boast a nice
+                        collection of vinyl and CDs. <br>
+                        &#127911; Yes, I am also a DJ, here in Turin I had the opportunity to organize events and play
+                        with my
+                        crew <a href="https://www.facebook.com/ElectroFrame" target="_blank">ELECTROFRAME</a> in many
+                        clubs.
+                    </p>
+                    <p>
+                        &#127918; After watching the animated series 'Arcane', and discovering that the story is taken
+                        from the
+                        video game 'League of Legends'
+                        I ventured to the Summoners Rift's... and never went back.
+                    </p>
+                    <p>
+                        &#128248; Not to be outdone is my passion for photography; I have studied the basics of this
+                        subject and
+                        put them into practice
+                        whenever I have the opportunity!
+                    </p>
+                </article>
+
+                <aside class="aside-right"> <!--right carousel-->
+
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <!--CAROUSEL INNER-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/carousel-random-facts/plants.JPG" class="d-block w-100"
+                                    alt="plants-and-bass">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Plants and Bass</h5>
+                                    <p>These are my beloved plants -actually just some of them-.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/vinyl-collectrion.JPG"
+                                    class="d-block w-100" alt="vinyl-collection">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Vinyl collection</h5>
+                                    <p>Different music styles -from rock and punk to electronic- in a colection.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/listening-to-bob-dylan.jpg"
+                                    class="d-block w-100" alt="listening-to-bob-dylan">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bob Dylan</h5>
+                                    <p>A gift for my dad.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/djing-at-home.JPG" class="d-block w-100"
+                                    alt="djing-at-home">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>The Rave Room</h5>
+                                    <p>Exercising at home...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/dj-hiiena-askatasuna.jpg"
+                                    class="d-block w-100" alt="dj-hiiena-at-askatasuna">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>DJ Hiiena</h5>
+                                    <p>... and live!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/playing-league-of-legends.jpg"
+                                    class="d-block w-100" alt="doodle-me-playing-league-of-legends">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Summoners rift</h5>
+                                    <p>Yes, I'm a gamer and this is a potrait of me playing my fav game.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/saturnia.jpg" class="d-block w-100"
+                                    alt="saturnia-tuscany">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Saturnia</h5>
+                                    <p>Last summer i went to Saturnia for the first time.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/badroom.jpg" class="d-block w-100"
+                                    alt="bedroom">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Dawn</h5>
+                                    <p>I really love this pic, my old room at dawn.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-random-facts/upsidedown.jpg" class="d-block w-100"
+                                    alt="upsidedown-abandon-building">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Upside-down</h5>
+                                    <p>Sometimes I go for a walk searching for abandon buildings.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--CAROUSEL CHEVRON CONTROL-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </aside>
+            </section>
+
+        </div>
+    </main>
+
+    <!--START THE SKILL SECTION-->
+    <main id="skills" class="skills-section">
+        <div class="container">
+            <h1 class="sections-titles display-4">// skills.</h1>
+
+            <!--dev row-->
+            <section class="d-flex flex-row justify-content-center align-items-center webdev-skills">
+
+                <article class="skills-intro"> <!--web dev col-->
+                    <h2 class="sub-title display-6">web development.</h2>
+
+                    <p>
+                        So far, I have thoroughly studied the theoretical and practical basics of properly building a
+                        website.
+                        <br>
+                        The program of study for my master's degree in full stack development still involves Javascript
+                        Advanced, Angular (or
+                        React, or VueJS), Node.js (or PHP and MySQL, or Java), Jekyll and a final project.
+                    </p>
+                </article>
+
+                <div class="d-flex flex-row skills-info-col">
+                    <article class="skills-info d-flex flex-column text-center"> <!--im into col-->
+                        <h3 class="text-purple">i'm into.</h3>
+
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <div class="flex-column">
+                                <i class="fa-brands fa-html5 fa-2xl"></i>
+                                <p>HTML</p>
+
+                                <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                                <p>CSS</p>
+
+                                <i class="fa-brands fa-square-js fa-2xl"></i>
+                                <p>JavaScript</p>
+                            </div>
+
+                            <div class="flex-column">
+                                <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                                <p>Bootstrap</p>
+
+                                <i class="fa-brands fa-sass fa-2xl"></i>
+                                <p>Sass</p>
+
+                                <i class="fa-brands fa-wordpress-simple fa-2xl"></i>
+                                <p>WordPress</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skills-info d-flex flex-column text-center"> <!--future skills col-->
+                        <h3 class="text-purple">future skills.</h3>
+
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <div class="flex-column">
+                                <i class="fa-brands fa-angular fa-2xl"></i>
+                                <p>Angular</p>
+
+                                <i class="fa-brands fa-react fa-2xl"></i>
+                                <p>React</p>
+
+                                <i class="fa-brands fa-vuejs fa-2xl"></i>
+                                <p>Vue JS</p>
+
+                            </div>
+                            <div class="flex-column">
+                                <i class="fa-brands fa-node fa-2xl"></i>
+                                <p>Node JS</p>
+
+                                <i class="fa-brands fa-java fa-2xl"></i>
+                                <p>Java</p>
+
+                                <i class="fa-brands fa-square-git fa-2xl"></i>
+                                <p>Git</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--graphic row-->
+            <section class="d-flex flex-row justify-content-center align-items-center graphic-skills">
+
+                <article class="skills-intro"> <!--graphic col-->
+                    <h2 class="sub-title display-6">graphic.</h2>
+
+                    <p>
+                        In terms of graphic design, I have been able to take courses in college and online.
+                        I have always practiced and experimented, I like to play with images and draw with a graphics
+                        tablet. <br>
+                        I definitely want to delve into what SEO is about and venture a little bit into the world of
+                        user experiece and
+                        interface.
+                    </p>
+                </article>
+
+                <div class="d-flex flex-row skills-info-col">
+                    <article class="skills-info d-flex flex-column text-center"> <!--adobe skills col-->
+                        <h3 class="text-purple">adobe.</h3>
+
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <div class="adobe-col flex-column text-center">
+                                <img class="adobe-i" src="assets/images/icons/photoshop.png" alt="photoshop-icon">
+                                <p>Photoshop</p>
+
+                                <img class="adobe-i" src="assets/images/icons/illustrator.png" alt="illustrator-icon">
+                                <p>Illustrator</p>
+                            </div>
+
+                            <div class="adobe-col flex-column text-center">
+                                <img class="adobe-i" src="assets/images/icons/indesign.png" alt="indesign-icon">
+                                <p>InDesign</p>
+
+                                <img class="adobe-i" src="assets/images/icons/xd.png" alt="xd-icon">
+                                <p>Adobe XD</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skills-info d-flex flex-column text-center align-self-start"> <!--wanna do col-->
+                        <h3 class="text-purple">wanna do.</h3>
+
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <div class="flex-column">
+                                <img class="adobe-i" src="assets/images/icons/seo.png" alt="seo-icon">
+                                <p>S E O</p>
+                            </div>
+
+                            <div class="flex-column">
+                                <img class="adobe-i" src="assets/images/icons/ux-ui.png" alt="ux-ui-icon">
+                                <p>UX and UI</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--START THE PORTFOLIO SECTION-->
+    <main id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h1 class="sections-titles display-2">// portfolio.</h1>
+
+            <!--PORTFOLIO OVERVIEW-->
+            <section class="description">
+
+                <article class="text_col text-left text-white">
+                    <p>
+                        In this section I want to showcase my most successful works so far. The portfolio you are
+                        browsing on is my first real
+                        complete project, the one I am most proud and satisfied with! <br>
+                        I build it with Bootstrap and Sass, and I also wanted to add a little Javascript functionality
+                        (which I am devoting my studies
+                        to at the moment).
+                    </p>
+                    <p>In the next sections you'll find the links to the project i worked on and then a screenshot and
+                        art work gallery. </p>
+                </article>
+                <a href="resume.html">
+                    <button class="cv-button m-2" type="button">see my resume</button>
+                </a>
+                <a href="assets/pdf/francescaMartiniResume.pdf" download="francesca-martini-cv">
+                    <button class="cv-button m-2" type="button">download resume</button>
+                </a>
+
+            </section>
+
+            <!--CARDS THREE BOXES WITH MY PROJECTS-->
+            <section id="my-project">
+                <h1 class="sub-title display-4 text-secondary">projects.</h1>
+                <p class="text-white">
+                    The first project below, very simple in its realization since it is written only with HTML and CSS,
+                    is
+                    the first project
+                    delivered for the <a href="https://www.start2impact.it" target="_blank">Start2Impact</a> university
+                    master's program. The goal was to design a page for a science
+                    divulgation media.
+                </p>
+                <p class="text-white">
+                    The second project is the result of a <a href="https://www.foritgroup.it" target="_blank">ForIT</a>
+                    summer professional training course focused on developing sites with Wordpress.
+                    I used Elementor to
+                    build the site and thus had an opportunity to try to design and write an e-commerce page.
+                </p>
+                <p class="pb-5 text-white">Last one project here is a simple and basic page made in HTML and CSS, an
+                    exercise of <a href="https://www.freecodecamp.org" target="_blank">freecodecamp.org</a> course.</p>
+
+                <article class="three-box-overview">
+                    <div class="project-cards-wrapper text-center">
+                        <!--CARD 1-->
+                        <div class="card projects-card">
+                            <img src="assets/images/project-cards/dna-header.png" class="card-img-top"
+                                alt="the-logo-of-dna-science-divulgation-website">
+                            <div class="card-body">
+                                <h2 class="card-title">Science divulgation web-page <br> X Start2Impact</h2>
+                                <p class="card-text">A project for Start2Impact university web developing master.</p>
+                                <img class="img-fluid schools-logo" src="assets/images/project-cards/s2i-logo.png"
+                                    alt="start-2-impact-university-logo">
+                                <br>
+                                <a href="https://frednb-bit.github.io/science-divulgation-project/" target="_blank"
+                                    class="visit-button">Visit
+                                    the Website</a>
+                            </div>
+                        </div>
+
+                        <!--CARD 2-->
+                        <div class="card projects-card">
+                            <img src="assets/images/project-cards/background_face.png" class="card-img-top"
+                                alt="a-purple-face-draw-by-me">
+                            <div class="card-body">
+                                <h2 class="card-title">E-commerce web-page <br> X ForIT course</h2>
+                                <p class="card-text">Exercise on how to create an e-commerce with Wordpress.</p>
+                                <img class="img-fluid schools-logo" src="assets/images/project-cards/forit-logo.png"
+                                    alt="start-2-impact-university-logo">
+                                <br>
+                                <a href="http://francescaforit.altervista.org" target="_blank"
+                                    class="visit-button">Visit
+                                    the Website</a>
+                            </div>
+                        </div>
+
+                        <!--CARD 3-->
+                        <div class="card projects-card">
+                            <img src="assets/images/project-cards/elliott-autographs.jpg" class="card-img-top"
+                                alt="a-purple-face-draw-by-me">
+                            <div class="card-body">
+                                <h2 class="card-title">Elliott Erwitt tribute page <br> X freecodecamp.org</h2>
+                                <p class="card-text">A tribute page for the great photographer Elliott Erwitt.</p>
+                                <img class="img-fluid schools-logo" src="assets/images/project-cards/freecode-logo.png"
+                                    alt="start-2-impact-university-logo">
+                                <br>
+                                <a href="https://frednb-bit.github.io/tribute-page/" target="_blank"
+                                    class="visit-button">Visit
+                                    the Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--SCREENSHOT GALLERY-->
+            <section id="web-dev-screen" class="gallery-section">
+                <h1 class="sub-title display-4 text-secondary">screenshot gallery.</h1>
+                <article class="galley-grid-wrapper">
+
+                    <!--WORDPRESS PROJECT-->
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/wordpress/about.png"
+                            alt="website-prototype-wordpress">
+
+                        <h2 class="project-title">wordpress</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/wordpress/services.png"
+                            alt="website-prototype-wordpress">
+
+                        <h2 class="project-title">wordpress</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/wordpress/shop.png"
+                            alt="website-prototype-wordpress">
+
+                        <h2 class="project-title">wordpress</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <!--HTML + CSS PROJECT-->
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/DNA-magazine/homepage.png"
+                            alt="website-prototype-html-css">
+
+                        <h2 class="project-title">html + css</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/DNA-magazine/blog.png"
+                            alt="website-prototype-html-css">
+
+                        <h2 class="project-title">html + css</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/DNA-magazine/school.png"
+                            alt="website-prototype-html-css">
+
+                        <h2 class="project-title">html + css</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <!--OTHER SCREENSHOT-->
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/tec-doc-page.png"
+                            alt="technical-documentation-page-prototype">
+
+                        <h2 class="project-title">html + css</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/screenshot-portfolio/survey-form.png"
+                            alt="survey-form-page-prototype">
+
+                        <h2 class="project-title">html + css</h2>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <!--OVERLAY-->
+                    <div class="overlay">
+                        <div class="overlay-inner">
+                            <button class="close">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </button>
+                            <img />
+                        </div>
+                    </div>
+                </article>
+
+                <a href="https://github.com/FreDNB-bit" target="_blank">
+                    <button class="see-more-link">see more on git hub</button>
+                </a>
+            </section>
+
+            <!--ART WORK GALLERY-->
+            <section id="art-gallery" class="gallery-section">
+                <h1 class="sub-title display-4 text-secondary p-0">art gallery.</h1>
+                <h2 class="sub-title display-5 text-secondary">digital illustration. <br>
+                    free hand draws.</h2>
+                <p class="pb-5 text-white">
+                    As you may have guessed, traditional arts and the world of graphic design and illustration are also
+                    part of my
+                    background. So here I have brought some examples of my style. <br>
+                    In the first half, digital illustrations created with Adobe Illustrator and Photoshop, in the second
+                    half, freehand drawings, and an art print -engraving- (tribute to my favorite movie 'Melancholia' by
+                    Lars Von Trier).
+                </p>
+
+                <article class="galley-grid-wrapper">
+
+                    <!--ILLUSTRATOR PROJECT-->
+                    <div class="project">
+                        <img class="project-image" src="assets/images/gallery-images/illustrations/NABIL.png"
+                            alt="nabil-pnl-potrait">
+
+                        <h3 class="project-title">illustrator</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="assets/images/gallery-images/illustrations/eggplants.png"
+                            alt="eggplants-aubergine">
+
+                        <h3 class="project-title">illustrator</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="assets/images/gallery-images/illustrations/krix.png"
+                            alt="dj-krix-potrait">
+
+                        <h3 class="project-title">illustrator</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="assets/images/gallery-images/illustrations/kappa.png"
+                            alt="kambo-potrait">
+
+                        <h3 class="project-title">illustrator</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <!--FREE HAND-->
+                    <div class="project">
+                        <img class="project-image" src="assets/images/gallery-images/freehand/tortora.png"
+                            alt="dove-draw">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="assets/images/gallery-images/freehand/skele.png"
+                            alt="skeleton-doodle">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="assets/images/gallery-images/freehand/xingu-people.png"
+                            alt="xingu-people-potrait">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image"
+                            src="assets/images/gallery-images/freehand/colliding-planets-project.png"
+                            alt="colliding-planets-engraving-melancholia">
+
+                        <h3 class="project-title">free hand</h3>
+                        <div class="project-overlay">
+                            <button class="view-button">view more</button>
+                        </div>
+                    </div>
+
+                </article>
+
+                <a href="https://www.instagram.com/hare.aart/" target="_blank">
+                    <button class="see-more-link">see more on instagram</button>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!--START THE CONTACTS SECTION-->
+    <main id="contacts" class="contacts-section">
+        <div class="container">
+            <h1 class="sections-titles display-2 pb-0">// contacts.</h1>
+
+            <div class="d-flex justify-content-between align-items-center contacts-col">
+
+                <section class="contact-form">
+                    <h2 class="display-5 pb-5 text-secondary">let's get in touch!</h2>
+
+                    <div class="mb-3">
+                        <label for="name-input" class="form-label">// first and last name <span
+                                class="required">*</span></label>
+                        <input type="text" class="form-control" id="name-input" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email-input" class="form-label">// email <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="email-input" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="object-input" class="form-label">// object <span class="required">*</span></label>
+                        <input type="email" class="form-control" id="object-input" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="form-label" id>// leave a message</label>
+                        <textarea class="form-control" id="message" rows="6"></textarea>
+                    </div>
+
+                    <button type="submit" class="form-button text-center" onclick="sendMail()">send message</button>
+
+                </section>
+
+                <section class="contact-img">
+                    <div class="d-flex flex-column img-fluid">
+                        <img src="assets/images/anemoni.jpg" alt="anemoni-flowers">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--START FOOTER SECTION-->
+    <footer class="text-center">
+
+        <section class="d-flex flex-row footer-col">
+
+            <!--LOGO-->
+            <article class="footer-logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </article>
+
+            <!--SOCIAL MEDIA-->
+            <article class="social">
+                <a href="https://www.instagram.com/hare.aart/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/francesca-martini-239aa21b8/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/FreDNB-bit" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </article>
+
+
+            <!--MENU LINK-->
+            <article class="menu-link">
+                <ul class="d-flex flex-column">
+                    <li class="list-inline-item"><a href="#home">// home.</a></li>
+                    <li class="list-inline-item"><a href="#about">// about.</a></li>
+                    <li class="list-inline-item"><a href="resume.html">// resume.</a></li>
+                    <li class="list-inline-item"><a href="#portfolio">// portfolio.</a></li>
+                    <li class="list-inline-item"><a
+                            href="https://www.termsfeed.com/live/c0ec0139-e2f3-48df-b308-009905cde555"
+                            target="_blank">// terms.</a></li>
+                    <li class="list-inline-item"><a href="#">// privacy policy.</a></li>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center copyright-text">
+            © 2023 Copyright: Handmade with <span>&#x2764;</span> by Francesca Martini
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>

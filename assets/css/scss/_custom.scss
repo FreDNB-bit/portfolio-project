@@ -1,0 +1,73 @@
+//MY THEME COLORS
+$smoky-black: #0f0f0f; //background
+$transparent-black: #0f0f0f7c;
+$floral-white: #fff8f0; //text
+$dark-cyan: #0f8b8d; //titles 
+$acid-green: #a5be00; //highlights
+$ultra-violette: #626293; //details
+$bittersweet: #FF595E; //skills progress bar color
+$sunglow: #FFCA3A; //skills progress bar color
+$gray: #121212;
+
+$primary: $dark-cyan;
+$secondary: $acid-green;
+$details: $ultra-violette;
+$prog-red: $bittersweet;
+$prog-yellow: $sunglow;
+$dark: $smoky-black;
+$white: $floral-white;
+$transparent: $transparent-black;
+
+//TRANSITION EFFECT
+$ease: all 0.3s ease-in-out;
+
+//WHITE AND GREY COLORS
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+//NAVBAR
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color: $primary;
+
+//TIMELINE
+$gutter: 50px;
+$border-width: 4px;
+$dot-diameter: 30px;
+
+//FORM
+$input-btn-padding-y: .475rem;
+$input-btn-focus-color: $details;
+$input-color: $white;
+
+//ACCORDION
+$accordion-padding-y: 0;
+$accordion-color: $floral-white;
+$accordion-bg: transparent;
+$accordion-border-width: none;
+//button
+$accordion-button-color: $secondary;
+$accordion-button-bg: transparent;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $secondary;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+//icon
+$accordion-icon-width: 1.6rem;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+
+//LIST GROUP
+$list-group-bg: transparent;
+$list-group-border-width: none;
+
+//IMPORT BOOTSTRAP 5
+@import"../node_modules/bootstrap/scss/bootstrap.scss";

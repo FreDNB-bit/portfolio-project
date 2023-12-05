@@ -1,0 +1,50 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.portfolio-section {
+    #my-project {
+        h1 {
+            padding-top: 4rem;
+        }
+        .three-box-overview {
+            background: transparent;
+            color: $white;
+            width: auto;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+            &:before {
+                content: "";
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                @include cardsGradient;
+                filter: blur(28px);
+                opacity: 0.6;
+                border-radius: inherit;
+            }
+            &::after {
+                content: "";
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: inherit;
+                border-radius: inherit;
+            }
+            .project-cards-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: stretch;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

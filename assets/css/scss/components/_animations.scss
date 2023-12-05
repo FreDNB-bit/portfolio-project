@@ -1,0 +1,56 @@
+@use '../custom' as *;
+
+//CODING COLUMN TEXT ANIMATION
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba($color: $secondary, $alpha: 1.0);
+    }
+
+    to {
+        border-right-color: rgba($color: $secondary, $alpha: 0.5);
+    }
+}
+
+//CREATIVITY COLUMN TEXT ANIMATION
+//WAVE EFFECT
+@keyframes waveAnim {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-70px);
+    }
+}
+
+//CHANGE COLOR
+@keyframes colorChange {
+    0% {
+        color: $primary;
+    }
+
+    40% {
+        color: $secondary;
+    }
+
+    70% {
+        color: $details;
+    }
+
+    100% {
+        color: $primary;
+    }
+}
